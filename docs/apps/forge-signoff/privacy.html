@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SignOff Approvals privacy</title><style>body{font:16px/1.6 system-ui,sans-serif;max-width:860px;margin:0 auto;padding:24px 16px;background:#fff;color:#17191d}a{color:#2456c8}code{background:#f0f2f5;padding:1px 4px;border-radius:4px;font-size:.92em}pre{background:#f0f2f5;padding:12px;overflow-x:auto;border-radius:6px}.tw{overflow-x:auto}table{border-collapse:collapse;margin:10px 0}th,td{border:1px solid #e0e3e7;padding:6px 8px;text-align:left;vertical-align:top}nav a{margin-right:14px}header{display:flex;gap:14px;align-items:center}header img{width:56px;height:56px;border-radius:12px}@media(prefers-color-scheme:dark){body{background:#121417;color:#e8eaed}a{color:#7da2ff}code,pre{background:#1f242b}th,td{border-color:#2a2f36}}</style></head><body><header><img src="logo.png" alt=""><h1>SignOff Approvals</h1></header><nav><a href="index.html">Documentation</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="../../index.html">All products</a></nav><h2>Privacy policy for SignOff Approvals for Confluence</h2>
+<p>Last updated 2026-11-05. Publisher Zovo.</p>
+<p>SignOff runs entirely on Atlassian Forge. It has no servers of its own and sends nothing outside Atlassian.</p>
+<h3>What it stores</h3>
+<p>The app keeps these records in Forge storage, hosted by Atlassian, for the site where it&#x27;s installed.</p>
+<ul><li>Approval requests, which hold the page or blog post id and title, the version number, the requester&#x27;s Atlassian account ID, the approvers&#x27; account IDs, group IDs and group names, the rule, due date, note and time.</li><li>Decisions, which hold the decider&#x27;s account ID, approve or reject, the comment and time.</li><li>An audit log of requests, decisions, withdrawals and edit resets, with the same kinds of fields.</li></ul>
+<p>It doesn&#x27;t store email addresses, avatars or page content. Display names are looked up from Confluence when you export the history and aren&#x27;t saved.</p>
+<p>It also keeps a short index of which account IDs it stores and on which pages, so it can report and erase them (next section).</p>
+<h3>How long</h3>
+<p>Records are kept while the app is installed, because they&#x27;re an audit trail. What happens to Forge storage after an uninstall follows Atlassian&#x27;s Forge platform terms.</p>
+<h3>Closed Atlassian accounts</h3>
+<p>Once a day the app reports the account IDs it stores to Atlassian, using the Forge personal data reporting API. When Atlassian answers that an account is closed, the app replaces that account ID with a &quot;Closed account&quot; placeholder in requests, decisions, the audit log and its internal records of earlier rounds, and deletes the request notes and decision comments that person wrote. Their approvals still count toward the page&#x27;s status, without their ID.</p>
+<p>Each run reports up to 4,500 stored accounts and saves its place as it goes. Closed accounts are put on an erase list at once, and the run erases them until it reaches a 10-minute limit. Whatever is left is erased first on the next run, with the same placeholder.</p>
+<p>If a named approver&#x27;s account is closed before they decide, a request that needs everyone listed can&#x27;t finish. The requester or an editor can withdraw it and ask again.</p>
+<p>Comments the app posted on the page are ordinary Confluence comments, so Confluence handles them like any other content.</p>
+<h3>Who can see it</h3>
+<p>Everything is read with the viewer&#x27;s own Confluence permissions. Someone who can&#x27;t open a page can&#x27;t see its approval status or history in the app.</p>
+<h3>Comments the app posts</h3>
+<p>If a request has notifications on, the app posts footer comments on the page that mention people. Those comments are ordinary Confluence comments and follow the page&#x27;s permissions.</p>
+<h3>Contact</h3>
+<p>Contact Zovo through the support link on the Marketplace listing.</p></body></html>

@@ -1,0 +1,135 @@
+[
+ {
+  "slug": "forge-askspace",
+  "name": "AskSpace, Q&A",
+  "docs": "apps/forge-askspace/index.html",
+  "privacy": "apps/forge-askspace/privacy.html",
+  "support": "apps/forge-askspace/support.html"
+ },
+ {
+  "slug": "forge-bulk-page-ops",
+  "name": "Bulk Page Operations",
+  "docs": "apps/forge-bulk-page-ops/index.html",
+  "privacy": "apps/forge-bulk-page-ops/privacy.html",
+  "support": "apps/forge-bulk-page-ops/support.html"
+ },
+ {
+  "slug": "forge-codeblock-plus",
+  "name": "CodeBlock+",
+  "docs": "apps/forge-codeblock-plus/index.html",
+  "privacy": "apps/forge-codeblock-plus/privacy.html",
+  "support": "apps/forge-codeblock-plus/support.html"
+ },
+ {
+  "slug": "forge-dashboard-notes",
+  "name": "Dashboard Notes",
+  "docs": "apps/forge-dashboard-notes/index.html",
+  "privacy": "apps/forge-dashboard-notes/privacy.html",
+  "support": "apps/forge-dashboard-notes/support.html"
+ },
+ {
+  "slug": "forge-description-diff",
+  "name": "Description Diff",
+  "docs": "apps/forge-description-diff/index.html",
+  "privacy": "apps/forge-description-diff/privacy.html",
+  "support": "apps/forge-description-diff/support.html"
+ },
+ {
+  "slug": "forge-epic-totals",
+  "name": "Epic Totals",
+  "docs": "apps/forge-epic-totals/index.html",
+  "privacy": "apps/forge-epic-totals/privacy.html",
+  "support": "apps/forge-epic-totals/support.html"
+ },
+ {
+  "slug": "forge-expression-validators",
+  "name": "Expression Validators & Conditions",
+  "docs": "apps/forge-expression-validators/index.html",
+  "privacy": "apps/forge-expression-validators/privacy.html",
+  "support": "apps/forge-expression-validators/support.html"
+ },
+ {
+  "slug": "forge-filter-activity",
+  "name": "Filter Activity Stream",
+  "docs": "apps/forge-filter-activity/index.html",
+  "privacy": "apps/forge-filter-activity/privacy.html",
+  "support": "apps/forge-filter-activity/support.html"
+ },
+ {
+  "slug": "forge-github-gists",
+  "name": "Code Snippets from GitHub Gists",
+  "docs": "apps/forge-github-gists/index.html",
+  "privacy": "apps/forge-github-gists/privacy.html",
+  "support": "apps/forge-github-gists/support.html"
+ },
+ {
+  "slug": "forge-jira-dates-calendar",
+  "name": "Issue Dates Calendar",
+  "docs": "apps/forge-jira-dates-calendar/index.html",
+  "privacy": "apps/forge-jira-dates-calendar/privacy.html",
+  "support": "apps/forge-jira-dates-calendar/support.html"
+ },
+ {
+  "slug": "forge-markdown-mermaid",
+  "name": "Markdown + Mermaid",
+  "docs": "apps/forge-markdown-mermaid/index.html",
+  "privacy": "apps/forge-markdown-mermaid/privacy.html",
+  "support": "apps/forge-markdown-mermaid/support.html"
+ },
+ {
+  "slug": "forge-mathblock",
+  "name": "MathBlock LaTeX",
+  "docs": "apps/forge-mathblock/index.html",
+  "privacy": "apps/forge-mathblock/privacy.html",
+  "support": "apps/forge-mathblock/support.html"
+ },
+ {
+  "slug": "forge-nudge",
+  "name": "Nudge Reminders",
+  "docs": "apps/forge-nudge/index.html",
+  "privacy": "apps/forge-nudge/privacy.html",
+  "support": "apps/forge-nudge/support.html"
+ },
+ {
+  "slug": "forge-portal-sla",
+  "name": "Portal SLA Clocks for Jira Service Management",
+  "docs": "apps/forge-portal-sla/index.html",
+  "privacy": "apps/forge-portal-sla/privacy.html",
+  "support": "apps/forge-portal-sla/support.html"
+ },
+ {
+  "slug": "forge-secret-scanner",
+  "name": "Secret & PII Scanner for Confluence and Jira",
+  "docs": "apps/forge-secret-scanner/index.html",
+  "privacy": "apps/forge-secret-scanner/privacy.html",
+  "support": "apps/forge-secret-scanner/support.html"
+ },
+ {
+  "slug": "forge-signoff",
+  "name": "SignOff Approvals",
+  "docs": "apps/forge-signoff/index.html",
+  "privacy": "apps/forge-signoff/privacy.html",
+  "support": "apps/forge-signoff/support.html"
+ },
+ {
+  "slug": "forge-spacecal",
+  "name": "SpaceCal Team Calendar",
+  "docs": "apps/forge-spacecal/index.html",
+  "privacy": "apps/forge-spacecal/privacy.html",
+  "support": "apps/forge-spacecal/support.html"
+ },
+ {
+  "slug": "forge-statusbeacon",
+  "name": "StatusBeacon for Jira Service Management",
+  "docs": "apps/forge-statusbeacon/index.html",
+  "privacy": "apps/forge-statusbeacon/privacy.html",
+  "support": "apps/forge-statusbeacon/support.html"
+ },
+ {
+  "slug": "forge-watching-now",
+  "name": "Watching Now",
+  "docs": "apps/forge-watching-now/index.html",
+  "privacy": "apps/forge-watching-now/privacy.html",
+  "support": "apps/forge-watching-now/support.html"
+ }
+]

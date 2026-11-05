@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CodeBlock+ privacy</title><style>body{font:16px/1.6 system-ui,sans-serif;max-width:860px;margin:0 auto;padding:24px 16px;background:#fff;color:#17191d}a{color:#2456c8}code{background:#f0f2f5;padding:1px 4px;border-radius:4px;font-size:.92em}pre{background:#f0f2f5;padding:12px;overflow-x:auto;border-radius:6px}.tw{overflow-x:auto}table{border-collapse:collapse;margin:10px 0}th,td{border:1px solid #e0e3e7;padding:6px 8px;text-align:left;vertical-align:top}nav a{margin-right:14px}header{display:flex;gap:14px;align-items:center}header img{width:56px;height:56px;border-radius:12px}@media(prefers-color-scheme:dark){body{background:#121417;color:#e8eaed}a{color:#7da2ff}code,pre{background:#1f242b}th,td{border-color:#2a2f36}}</style></head><body><header><img src="logo.png" alt=""><h1>CodeBlock+</h1></header><nav><a href="index.html">Documentation</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="../../index.html">All products</a></nav><h2>Privacy</h2>
+<p>CodeBlock+ is a Confluence macro that runs on Atlassian Forge.</p>
+<h3>What it reads</h3>
+<p>The macro&#x27;s own settings (code, title, language and display options), which Confluence hands to the macro when a page opens. It also reads the license state Confluence provides.</p>
+<h3>What it stores</h3>
+<p>Nothing outside the page. The code and settings are saved in the macro on the page, the same way Confluence stores any macro&#x27;s settings. The app has no database, no key-value storage and no logs of its own.</p>
+<h3>What it doesn&#x27;t do</h3>
+<p>It doesn&#x27;t call any server outside Atlassian, load fonts or scripts from a CDN, or read other pages, spaces or users. It doesn&#x27;t collect analytics. The manifest declares no scopes and no external hosts, so Forge would block such calls anyway.</p>
+<h3>Removal</h3>
+<p>Uninstalling the app leaves the macro settings on your pages, because they&#x27;re page content. Reinstalling shows the blocks again.</p></body></html>
