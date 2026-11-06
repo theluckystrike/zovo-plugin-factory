@@ -14,4 +14,4 @@
 <h3>Data subject requests</h3>
 <p>The vendor holds no data. Every record expires on its own after 30 days at most, and account IDs of closed accounts are removed within about a week of the weekly report. Uninstalling the app removes its access to your site.</p>
 <h3>Security</h3>
-<ul><li>All Confluence calls use <code>asUser()</code>. The app never calls Confluence as itself.</li><li>Background job steps check that they run as the person who started the job before changing anything.</li><li>CQL is wrapped so it can only match pages in the current space, and requests go only to a fixed list of Confluence REST paths.</li></ul></body></html>
+<ul><li>All Confluence calls use <code>asUser()</code>. The app never calls Confluence as itself.</li><li>Job batches run only for the person who started the job, from their own open page. There are no background steps.</li><li>CQL is wrapped so it can only match pages in the current space, and requests go only to a fixed list of Confluence REST paths.</li></ul></body></html>
