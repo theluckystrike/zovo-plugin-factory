@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theluckystrike.github.io/zovo-plugin-factory/sitemap.xml
