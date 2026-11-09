@@ -1,0 +1,49 @@
+name: Zovo Pro key (PayPal payment)
+description: Paid for Zovo Pro with PayPal? Send the transaction ID here. The license key comes to the email address of your PayPal account.
+title: "Zovo Pro key: PayPal payment"
+labels: ["zovo-pro-key"]
+assignees: ["theluckystrike"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for buying Zovo Pro. It unlocks the Pro features in every Zovo VS Code viewer, for life.
+
+        This issue is public: post only the PayPal transaction ID. Do not post your name, your email address or a license key.
+
+        1. Pay on PayPal: [USD 19 for one person](https://www.paypal.com/paypalme/najzzz/19USD) or [USD 59 for a team of 5](https://www.paypal.com/paypalme/najzzz/59USD).
+        2. Send the transaction ID from your PayPal receipt with this form.
+        3. The license key is sent to the email address of your PayPal account. This issue is closed when it is sent.
+        4. In VS Code, open the Command Palette, type "license key", pick the command that enters a Zovo Pro license key and paste the key. The check runs on your computer.
+
+        Bought the "$19 one time" tier on GitHub Sponsors? You do not need this form: in the extension, choose "Unlock with GitHub Sponsors".
+  - type: input
+    id: txn
+    attributes:
+      label: PayPal transaction ID
+      description: 17 letters and digits, shown on the PayPal receipt and in the PayPal activity list.
+      placeholder: 7HX12345AB678901C
+    validations:
+      required: true
+  - type: dropdown
+    id: plan
+    attributes:
+      label: What did you pay for?
+      options:
+        - Zovo Pro, 1 person (USD 19)
+        - Zovo Pro Team, 5 people (USD 59)
+    validations:
+      required: true
+  - type: input
+    id: product
+    attributes:
+      label: Which Zovo extension do you use?
+      description: Any one is fine. The same key works in every Zovo viewer.
+      placeholder: Hex Viewer
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I posted only the transaction ID. No name, no email address, no other personal data.
+          required: true
