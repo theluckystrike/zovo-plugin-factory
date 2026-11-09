@@ -49,6 +49,7 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/archive-explorer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/arrow-avro-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/audio-preview-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/auto-rename-tag-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/code-screenshot-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/context-drift/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/dicom-nifti-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
@@ -150,6 +151,13 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/pro.html</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/products.html</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/report.html</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/shopify/</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/shopify/hide-shipping-payment/</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/shopify/hide-shipping-payment/privacy.html</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/shopify/order-limits/</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/shopify/order-limits/privacy.html</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/shopify/wholesale-pricing-tiers/</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/shopify/wholesale-pricing-tiers/privacy.html</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/traffic.html</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/users.html</loc><lastmod>2026-11-09</lastmod><priority>0.5</priority></url>
 </urlset>
