@@ -8,16 +8,21 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/apify/tubetext-youtube-transcript-scraper/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/apify/website-screenshot-pdf-api/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/auto-rename-tag-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/claude-code-history-viewer/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/code-screenshot-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/css-class-intellisense-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/csv-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/dicom-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/format-sql-in-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/har-file-viewer-offline/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/hdf5-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/hex-editor-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/html-preview-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/jsonl-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/linker-map-file-analyzer/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/mermaid-preview-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/mysql-client-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/netcdf-viewer/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/npy-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/npz-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
@@ -28,8 +33,10 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/open-parquet-file-in-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/open-pdf-in-cursor/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/open-pdf-in-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/parquet-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/pcap-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/pkl-file-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/postgres-client-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/regex-tester-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/rst-preview-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/rtf-viewer-vscode/</loc><lastmod>2026-11-09</lastmod><priority>0.9</priority></url>
