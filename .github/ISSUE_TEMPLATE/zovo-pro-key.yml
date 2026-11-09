@@ -17,11 +17,13 @@ body:
         4. In VS Code, open the Command Palette, type "license key", pick the command that enters a Zovo Pro license key and paste the key. The check runs on your computer.
 
         Bought the "$19 one time" tier on GitHub Sponsors? You do not need this form: in the extension, choose "Unlock with GitHub Sponsors".
+
+        Bought the "$59 one time" team tier on GitHub Sponsors and no key came within 24 hours? Use this form too: write your GitHub login instead of the transaction ID.
   - type: input
     id: txn
     attributes:
       label: PayPal transaction ID
-      description: 17 letters and digits, shown on the PayPal receipt and in the PayPal activity list.
+      description: 17 letters and digits, shown on the PayPal receipt and in the PayPal activity list. GitHub Sponsors team purchase? Write your GitHub login.
       placeholder: 7HX12345AB678901C
     validations:
       required: true
@@ -32,6 +34,7 @@ body:
       options:
         - Zovo Pro, 1 person (USD 19)
         - Zovo Pro Team, 5 people (USD 59)
+        - Zovo Pro Team, 5 people (USD 59, GitHub Sponsors)
     validations:
       required: true
   - type: input

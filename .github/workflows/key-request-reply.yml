@@ -1,0 +1,43 @@
+# One automatic reply on new issues from the "Zovo Pro key" and "Format request" forms (lane EXEC7, 9 Nov 2026).
+# It says when the answer comes and asks people not to post personal data. No other trigger, no checkout, no secrets.
+name: Key and format request reply
+on:
+  issues:
+    types: [opened]
+permissions:
+  issues: write
+concurrency:
+  group: request-reply-${{ github.event.issue.number }}
+  cancel-in-progress: true
+jobs:
+  reply:
+    if: contains(github.event.issue.labels.*.name, 'zovo-pro-key') || contains(github.event.issue.labels.*.name, 'format-request')
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const MARK = '[//]: # (zovo-request-reply)';
+            const labels = (context.payload.issue.labels || []).map((l) => l.name);
+            const key = labels.includes('zovo-pro-key');
+            const text = key
+              ? [
+                  'Thank you. Your request is in the queue.',
+                  '',
+                  'The owner checks new key requests twice a day, morning and evening in UTC+7. After the payment is checked, the Zovo Pro license key goes by email to the address of your PayPal account (for a GitHub Sponsors purchase, to the email you share with the sponsorship). That is usually within 24 hours. This issue is closed when the key is sent.',
+                  '',
+                  'Do not post your email or name here. This issue is public. If you posted them by mistake, edit your post and remove them. Never post a license key here either.',
+                ]
+              : [
+                  'Thank you for the request.',
+                  '',
+                  'The owner reads new format requests twice a day, morning and evening in UTC+7, and answers in this issue whether the format or feature can be added. That is usually within 24 hours. Please wait for that answer before you pay for the paid option.',
+                  '',
+                  'Do not post your email or name here. This issue is public. Attach only sample files with dummy data.',
+                ];
+            const { owner, repo } = context.repo;
+            const issue_number = context.payload.issue.number;
+            const old = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number, per_page: 100 });
+            if (old.some((c) => (c.body || '').includes(MARK))) return;
+            await github.rest.issues.createComment({ owner, repo, issue_number, body: MARK + '\n\n' + text.join('\n') });
