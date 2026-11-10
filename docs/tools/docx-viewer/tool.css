@@ -80,3 +80,9 @@ zovo-doc-viewer { display: block; height: 78vh; min-height: 420px; border: 1px s
 .tools { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
 @media (max-width: 900px) { .hexmain { grid-template-columns: 1fr; } .side { max-height: none; } .funnel { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { h1 { font-size: 24px; } .lead { font-size: 16px; } #rows { font-size: 12.5px; } .row { gap: 8px; } .row .hx .b { padding: 0 2px; } .bar input[type=text] { width: 120px; } }
+
+/* WEB2: SQLite Viewer Online (the viewer frame) and the Pro hint it shows on demand. */
+#frameBox iframe { display: block; width: 100%; height: 78vh; min-height: 460px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+#proNote { border-left: 3px solid var(--acc); padding: 6px 10px; margin: 10px 0; background: var(--panel); }
+#pro.flash { outline: 2px solid var(--acc); outline-offset: 3px; }
+#stop[hidden], #proNote[hidden] { display: none; }
