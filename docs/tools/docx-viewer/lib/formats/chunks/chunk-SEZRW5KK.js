@@ -1,0 +1,2 @@
+/*! Zovo Doc Viewer v0.1.0 | GPL-3.0-or-later or commercial licence (COMMERCIAL.md) | https://github.com/theluckystrike/zovo-doc-viewer */
+function p(i,e,n="start"){if(!i||!e)return;let t=e.getBoundingClientRect(),o=i.getBoundingClientRect();n==="center"?i.scrollTop+=t.top-o.top-(o.height-t.height)/2:n==="nearest"?t.top<o.top?i.scrollTop+=t.top-o.top-8:t.bottom>o.bottom&&(i.scrollTop+=t.bottom-o.bottom+8):i.scrollTop+=t.top-o.top-8,(t.left<o.left||t.right>o.right)&&(i.scrollLeft+=t.left-o.left-Math.max(8,(o.width-t.width)/2))}export{p as a};
