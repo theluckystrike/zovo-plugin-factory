@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-hex-viewer-e3b045381d8b';
+const CACHE = 'zovo-hex-viewer-5236775ba5ed';
 const FILES = ["./", "tool.css", "app.js", "worker.js", "engine.js"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-hex-viewer-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

@@ -168,7 +168,8 @@
       list.append(li);
     }
     box.append(list);
-    if (m.nested) box.append(el('p', 'mut small', `The top level is free here and in the extension. The ${B.fmtInt(m.nested)} nested fields open with Zovo Pro in Hex Viewer for VS Code and Cursor.`));
+    const below = Math.max(0, (m.nested || 0) - (m.tree.c || []).length); // countNested counts the top-level fields too
+    if (below) box.append(el('p', 'mut small', `The top level is free here and in the extension. The ${B.fmtInt(below)} nested fields open with Zovo Pro in Hex Viewer for VS Code and Cursor.`));
     if (m.others && m.others.length) box.append(el('p', 'mut small', 'Other templates that also match: ' + m.others.join(', ') + '.'));
   }
 
