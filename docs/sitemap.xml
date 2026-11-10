@@ -108,6 +108,7 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/agent-session-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/ai-usage-meter-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/apk-analyzer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/archive-explorer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/arrow-avro-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/audio-preview-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
@@ -118,11 +119,13 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/cosmos-db-client-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/dicom-nifti-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/docstring-generator-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/docx-editor-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/docx-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/dxf-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/elf-pe-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/eml-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/epub-reader-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/folder-diff-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/font-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/gcode-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/geo-map-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
@@ -132,6 +135,8 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/hex-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/html-css-class-intellisense-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/html-preview-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/intel-hex-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/jar-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/js-ts-scratchpad-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/json-tree-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/jsonl-viewer-vscode/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
