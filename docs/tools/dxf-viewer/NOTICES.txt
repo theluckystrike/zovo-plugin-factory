@@ -1,0 +1,2 @@
+DXF Viewer Online (Zovo). Viewer and DXF reader: DXF Viewer for VS Code (zovo.dxf-viewer) 76bfe05610, MIT license. No third-party code.
+Sample: floor-plan.dxf, a made-up drawing from the extension repo.

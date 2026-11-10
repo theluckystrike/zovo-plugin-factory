@@ -86,3 +86,18 @@ zovo-doc-viewer { display: block; height: 78vh; min-height: 420px; border: 1px s
 #proNote { border-left: 3px solid var(--acc); padding: 6px 10px; margin: 10px 0; background: var(--panel); }
 #pro.flash { outline: 2px solid var(--acc); outline-offset: 3px; }
 #stop[hidden], #proNote[hidden] { display: none; }
+
+/* WEB3: SVG to PNG Converter (options bar, result list, paste box). */
+#drop.compact { padding: 14px; }
+#drop.compact .dz { font-size: 16px; }
+#pasteBox { margin-top: 10px; text-align: left; }
+#pasteBox textarea { width: 100%; box-sizing: border-box; font: 12.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 8px; margin: 6px 0; }
+#opts select, #opts input { margin-right: 8px; }
+.pnglist { list-style: none; padding: 0; margin: 8px 0; display: grid; gap: 10px; }
+.pnglist li { display: grid; grid-template-columns: 140px 1fr; gap: 12px; align-items: center; border: 1px solid var(--line); border-radius: 8px; padding: 10px; background: var(--panel); }
+.pnglist .thumb { width: 140px; height: 100px; display: flex; align-items: center; justify-content: center; border-radius: 6px; background-color: #fff; background-image: linear-gradient(45deg, #e6e9ee 25%, transparent 25%, transparent 75%, #e6e9ee 75%), linear-gradient(45deg, #e6e9ee 25%, transparent 25%, transparent 75%, #e6e9ee 75%); background-size: 16px 16px; background-position: 0 0, 8px 8px; }
+.pnglist .thumb img { max-width: 100%; max-height: 100%; }
+.pnglist .name { font-weight: 600; word-break: break-all; }
+.pnglist .meta > * { margin: 3px 0; }
+.pnglist .btn { margin-top: 6px; display: inline-block; }
+@media (max-width: 600px) { .pnglist li { grid-template-columns: 1fr; } .pnglist .thumb { width: 100%; } }

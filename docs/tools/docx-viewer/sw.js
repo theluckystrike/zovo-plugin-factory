@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-docx-viewer-90bee538a2f7';
+const CACHE = 'zovo-docx-viewer-ca34c8f0b513';
 const FILES = ["./", "tool.css", "app.js", "sample.js", "lib/zovo-doc-viewer.js", "lib/formats/docx.js", "lib/formats/odt.js", "lib/formats/chunks/chunk-F4533EDT.js", "lib/formats/chunks/chunk-IASTZO2J.js", "lib/formats/chunks/chunk-SEZRW5KK.js", "lib/formats/chunks/chunk-YNDUCXLW.js", "lib/formats/chunks/chunk-ZMIVMEKO.js"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-docx-viewer-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

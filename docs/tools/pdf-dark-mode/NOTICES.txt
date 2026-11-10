@@ -1,0 +1,3 @@
+PDF Dark Mode Viewer (Zovo). Viewer code: PDF Viewer for VS Code (zovo.pdf-viewer-dark) 6477d05995, MIT license.
+pdf.js: pdfjs-dist 5.7.284 (Apache-2.0), legacy build, see pdfjs/LICENSE and the LICENSE files in pdfjs/wasm and pdfjs/standard_fonts.
+Sample: earthquakes-october-2026.pdf, made from the USGS ComCat earthquake catalog (public domain).

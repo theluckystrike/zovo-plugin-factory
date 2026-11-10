@@ -1,0 +1,3 @@
+EPUB Reader Online (Zovo). Reader code: EPUB Reader for VS Code (zovo.zovo-epub-reader) ec0011fbf6, MIT license.
+fflate 0.8.2 (MIT license, Copyright (c) 2023 Arjun Barrett), inflate for the EPUB ZIP.
+Sample: the-lighthouse-keepers-log.epub, a made-up book from the extension repo.

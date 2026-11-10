@@ -1,0 +1,2 @@
+SVG to PNG Converter (Zovo). Size and safety helpers: svgcore.js from SVG Preview & SVG Viewer for VS Code (zovo.zovo-svg-viewer) 9af8297ca1, MIT license.
+The PNG is made by your browser (canvas). No third-party code.
