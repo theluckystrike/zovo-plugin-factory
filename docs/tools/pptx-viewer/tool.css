@@ -101,3 +101,11 @@ zovo-doc-viewer { display: block; height: 78vh; min-height: 420px; border: 1px s
 .pnglist .meta > * { margin: 3px 0; }
 .pnglist .btn { margin-top: 6px; display: inline-block; }
 @media (max-width: 600px) { .pnglist li { grid-template-columns: 1fr; } .pnglist .thumb { width: 100%; } }
+
+/* WEB4: Mermaid Editor Online and Graphviz Online (code box beside the preview frame). */
+.edgrid { display: grid; grid-template-columns: minmax(280px, 2fr) 3fr; gap: 12px; align-items: stretch; }
+.edgrid .code { display: flex; flex-direction: column; min-width: 0; }
+#code { flex: 1; width: 100%; box-sizing: border-box; min-height: 460px; height: 78vh; resize: vertical; font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; tab-size: 2; background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: 10px; white-space: pre; overflow: auto; }
+.edgrid #frameBox { min-width: 0; }
+#msg button.link { background: none; border: 0; padding: 0; color: var(--acc); text-decoration: underline; cursor: pointer; font: inherit; }
+@media (max-width: 860px) { .edgrid { grid-template-columns: 1fr; } #code { height: 40vh; min-height: 240px; } .edgrid #frameBox iframe { height: 60vh; min-height: 360px; } }

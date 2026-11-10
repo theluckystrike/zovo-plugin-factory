@@ -1,0 +1,3 @@
+Graphviz Online (Zovo). Preview code: Graphviz Preview for VS Code (zovo.zovo-graphviz-preview) 150f166f19, MIT license.
+@viz-js/viz 3.31.0 (MIT license, Copyright (c) Michael Daines), with Graphviz compiled to WebAssembly (Eclipse Public License 1.0, https://graphviz.org/license/).
+Examples: made-up graphs written for this page.

@@ -1,0 +1,3 @@
+STL Viewer Online (Zovo). Viewer code: 3D Model Viewer for VS Code (zovo.3d-model-viewer) eea60650ad, MIT license.
+three.js 0.187.0 with its loaders and controls (MIT license, Copyright 2010-2026 three.js authors).
+Sample: gear.stl, a made-up part from the extension repo (scripts/make-samples.mjs).

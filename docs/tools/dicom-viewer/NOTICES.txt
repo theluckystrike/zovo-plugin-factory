@@ -1,0 +1,3 @@
+DICOM Viewer Online (Zovo). Viewer and reader: DICOM & NIfTI Viewer for VS Code (zovo.dicom-nifti-viewer) 31d64cfcae, MIT license.
+dicom-parser 1.8.21 (MIT license, Copyright (c) 2014 Chris Hafey), fflate 0.8.3 (MIT license, Copyright (c) 2023 Arjun Barrett), NIfTI reader from nifti-reader-js (MIT license).
+Sample: mr-brain-phantom.dcm, a synthetic phantom made by the extension repo (scripts/make-samples.js). It shows made-up shapes, not a real patient.

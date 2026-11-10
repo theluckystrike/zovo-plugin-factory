@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-sqlite-viewer-3be28d6a6fc9';
+const CACHE = 'zovo-sqlite-viewer-9f6a9801886a';
 const FILES = ["./", "tool.css", "app.js", "sample.js", "viewer.html", "viewer.js", "webview.js", "worker.js", "webview.css", "vars.css", "NOTICES.txt"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-sqlite-viewer-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

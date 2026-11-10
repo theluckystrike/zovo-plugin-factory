@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; worker-src 'self'; style-src 'self'; img-src 'self' blob: data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex"><link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="vars.css"><link rel="stylesheet" href="preview.css">
+
+<title>Graphviz preview</title>
+</head>
+<body data-theme="auto">
+<div id="app">
+  <div id="toolbar" role="toolbar" aria-label="Graphviz preview">
+    <label class="grp" title="Layout engine. A layout= attribute in the file wins over this choice.">Engine
+      <select id="engine" aria-label="Layout engine"><option value="auto" selected>auto (file or dot)</option><option value="dot">dot</option><option value="neato">neato</option><option value="fdp">fdp</option><option value="sfdp">sfdp</option><option value="circo">circo</option><option value="twopi">twopi</option></select></label>
+    <select id="block" class="hidden" aria-label="Dot block in this Markdown file"></select>
+    <span class="grp search"><input id="search" type="search" placeholder="Find node" aria-label="Find node" spellcheck="false"><span id="hits" aria-live="polite"></span></span>
+    <span class="grp">
+      <button id="zoomOut" title="Zoom out (-)" aria-label="Zoom out">−</button>
+      <span id="zoomLabel" title="Zoom">100%</span>
+      <button id="zoomIn" title="Zoom in (+)" aria-label="Zoom in">+</button>
+      <button id="fit" title="Fit to window (0)">Fit</button>
+      <button id="actual" title="Actual size (1)">1:1</button>
+    </span>
+    <span class="grp">
+      <button id="exportSvg" title="Save as SVG">SVG</button>
+      <button id="exportPng" title="Save as PNG (2x)">PNG</button>
+      <button id="exportPdf" title="Save as a vector PDF, with an optional title page (Zovo Pro)" data-pro="pro">PDF<span class="pro-badge" aria-label="Zovo Pro">PRO</span></button>
+    </span>
+    <span id="status" aria-live="polite"></span>
+  </div>
+  <div id="problem" class="hidden" role="alert"></div>
+  <div id="viewport" tabindex="0" aria-label="Graph. Drag to pan, Ctrl or Cmd + wheel to zoom, click a node to go to its line.">
+    <div id="stage"></div>
+    <div id="empty">Rendering…</div>
+  </div>
+  
+</div>
+<script src="host.js"></script>
+<script src="raster.js"></script>
+<script src="preview.js"></script>
+</body>
+</html>

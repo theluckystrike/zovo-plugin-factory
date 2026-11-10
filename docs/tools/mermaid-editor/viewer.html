@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex"><link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="vars.css"><link rel="stylesheet" href="preview.css">
+
+<title>Mermaid preview</title>
+</head>
+<body data-bg="theme">
+<div id="app">
+  <div id="toolbar" role="toolbar" aria-label="Mermaid preview">
+    <select id="block" class="hidden" aria-label="Diagram in this Markdown file"></select>
+    <label class="grp" title="Mermaid theme. A theme set in the diagram itself wins.">Theme
+      <select id="theme" aria-label="Mermaid theme"><option value="auto" selected>Auto (follow VS Code)</option><option value="default">Default</option><option value="dark">Dark</option><option value="forest">Forest</option><option value="neutral">Neutral</option><option value="base">Base</option></select></label>
+    <label class="grp" title="Background of the preview and of exported files">Background
+      <select id="bg" aria-label="Background"><option value="theme" selected>Editor color</option><option value="white">White</option><option value="transparent">Transparent</option><option value="custom">Custom</option></select>
+      <input id="bgColor" type="color" value="#f5f5f0" aria-label="Custom background color" class="hidden"></label>
+    <span class="grp zoomgrp">
+      <button id="zoomOut" title="Zoom out (-)" aria-label="Zoom out">−</button>
+      <span id="zoomLabel" title="Zoom">100%</span>
+      <button id="zoomIn" title="Zoom in (+)" aria-label="Zoom in">+</button>
+      <button id="fit" title="Fit to window (0)">Fit</button>
+      <button id="actual" title="Actual size (1)">100%</button>
+    </span>
+    <span class="grp"><button id="exportBtn" aria-haspopup="true" aria-expanded="false" title="Save or copy the diagram">Export ▾</button></span>
+    <span id="status" aria-live="polite"><span id="version">Mermaid 12.3.0</span><span id="info"></span></span>
+  </div>
+  <div id="exportMenu" class="hidden" role="dialog" aria-label="Export">
+    <div class="row"><span class="lbl">Scale</span>
+      <label><input type="radio" name="scale" value="1"> 1x</label>
+      <label><input type="radio" name="scale" value="2" checked> 2x</label>
+      <label><input type="radio" name="scale" value="4"> 4x</label></div>
+    <div class="row"><label class="lbl" for="maxW">Width</label><input id="maxW" type="number" min="16" max="32000" step="1" placeholder="auto"> px</div>
+    <div class="row"><label class="lbl" for="maxH">Height</label><input id="maxH" type="number" min="16" max="32000" step="1" placeholder="auto"> px</div>
+    <div class="row note">Width or height gives that exact size. Both: the largest size that fits. Empty: the scale.</div>
+    <div class="row note" id="pngSize"></div>
+    <div class="row"><label title="Draw labels as SVG text instead of HTML. Azure DevOps and some wikis and image tools drop HTML labels."><input id="svgText" type="checkbox"> Text labels for wikis (Azure DevOps, GitHub)</label></div>
+    <div class="row actions">
+      <button id="savePng" class="primary">Save PNG</button>
+      <button id="copyPng">Copy PNG</button>
+      <button id="saveSvg">Save SVG</button>
+      <button id="copySvg">Copy SVG code</button>
+      <button id="savePdf" title="All diagrams of this file in one PDF, with a title page. Zovo Pro tool with 3 free tries.">Save PDF <span class="pro">Pro</span></button>
+    </div>
+  </div>
+  <div id="problem" class="hidden" role="alert"></div>
+  <div id="viewport" tabindex="0" aria-label="Diagram. Scroll to zoom, drag to pan.">
+    <div id="stage"></div>
+  </div>
+  <div id="list" class="hidden" tabindex="0" aria-label="All Mermaid diagrams in this file"></div>
+  <div id="empty">Drawing…</div>
+  
+</div>
+<script src="host.js"></script>
+<script src="mermaid.min.js"></script>
+<script src="svgtools.js"></script>
+<script src="preview.js"></script>
+</body>
+</html>

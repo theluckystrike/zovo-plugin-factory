@@ -1,0 +1,3 @@
+EML Viewer Online (Zovo). Viewer and mail reader: EML Viewer for VS Code (zovo.eml-viewer) 2f19460297, MIT license.
+postal-mime 4.2.0 (MIT No Attribution license, Copyright (c) 2021 Andris Reinman), buffer 6.0.3 (MIT license, Copyright (c) Feross Aboukhadijeh).
+Sample: newsletter.eml, a made-up message from the extension repo.

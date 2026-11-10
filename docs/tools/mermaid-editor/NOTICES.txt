@@ -1,0 +1,2 @@
+Mermaid Editor Online (Zovo). Preview code: Mermaid Viewer for VS Code (zovo.mermaid-viewer) 2478e62a26, MIT license.
+Mermaid 12.3.0 (MIT license), see mermaid-LICENSE.txt. Examples: the extension's own templates (src/core/templates.js).
