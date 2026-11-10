@@ -11,7 +11,7 @@
 <p>This has nothing to do with Jira&#x27;s Watch button. The app never reads or changes a work item&#x27;s watchers.</p>
 <h3>What people see</h3>
 <p>Open a work item and add the Watching Now panel from the Apps button. The panel shows two short lists.</p>
-<ul><li>People who have this work item open now, each with their Jira avatar and name and how long ago they last checked in (&quot;just now&quot;, &quot;1 min ago&quot;).</li><li>People who had it open earlier in the window your admin picked, newest first (&quot;25 min ago&quot;, &quot;3 h ago&quot;). This list only appears when the window is on.</li></ul>
+<ul><li>People who have this work item open now, each with their Jira avatar and name and how long ago they last checked in (&quot;just now&quot;, &quot;1 min ago&quot;).</li><li>People who had it open earlier in the window your admin picked, newest first (&quot;25 min ago&quot;, &quot;3 h ago&quot;). This list only appears when the window is on, and it&#x27;s a paid feature.</li></ul>
 <p>You never see yourself in either list. Up to 20 people are listed under &quot;now&quot; and 30 under &quot;earlier&quot;. When there are more, the panel says how many it left out.</p>
 <p>Anyone can click &quot;Don&#x27;t list me&quot; in the panel. From then on the app records no views for that person on any work item in the site. Their records on the work item they&#x27;re looking at are deleted at once. Records they left on other work items before hiding stay in those lists until the window ends. &quot;List me again&quot; undoes it. A hidden person still sees the lists.</p>
 <h3>How presence works</h3>
@@ -27,12 +27,20 @@
 <p>That permission check is the app&#x27;s only Jira API call. It can&#x27;t change anything in Jira.</p>
 <h3>Limits</h3>
 <ul><li>Only people who have the work item open in Jira on the web are counted for sure. Jira&#x27;s mobile apps haven&#x27;t been tested.</li><li>Up to 300 records are read for one work item per check-in. When the earlier list is on, up to 300 short &quot;now&quot; records are read first, so people who have it open now aren&#x27;t pushed out by older ones. Past 300, records come back in storage order, not newest first, and the panel says the lists are partial.</li><li>Records belong to the project the work item was in when they were saved. After a work item moves to another project, its lists start fresh there.</li><li>If a check-in fails or gets no answer within 30 seconds, the panel keeps the last list it had, says it couldn&#x27;t update, and tries again after 1, 2, 4 and then 5 minutes.</li><li>Forge limits how often one site can call an app, a few thousand calls a minute per installation (7,000 in the current Forge docs, 5,000 in a planned change). Each work item open in a visible tab makes 2 calls a minute, up to 4 with the panel open. So roughly 2,500 work items open at the same moment across a site is the ceiling. That&#x27;s arithmetic from those limits, not a load test. Past it, Forge turns calls away for the rest of the minute, including the settings page, and open work items back off as above. The app doesn&#x27;t read Forge&#x27;s rate limit reset time.</li></ul>
+<h3>Free and paid features</h3>
+<p>Payment model is Paid via Atlassian, and the core stays free. Sites with up to 10 users pay nothing.</p>
+<p>Free, with or without a subscription:</p>
+<ul><li>The panel&#x27;s list of who has the work item open now, with the background check-in that counts people who never open the panel.</li><li>The per-project switch and the &quot;has this open&quot; window (2 to 5 minutes).</li><li>&quot;Don&#x27;t list me&quot;, and deleting recorded views.</li></ul>
+<p>Paid, with an active subscription or trial:</p>
+<ul><li>The earlier list. People who had the work item open in the last 1, 4, 8 or 24 hours.</li></ul>
+<p>The price is $0.15 per user per month for 11 to 100 users, $0.11 for 101 to 250, $0.08 for 251 to 1,000 and $0.05 above 1,000. Annual billing is 10 times the monthly price. A free trial through Atlassian opens the earlier list for the length of the trial. When a subscription ends, the &quot;now&quot; list keeps working and the earlier list stops showing, even if it&#x27;s still chosen in the settings. Records are then kept only for the &quot;has this open&quot; minutes. Admins can always turn a project off. The server checks the license, and saving the earlier list without one gets a short note that a Jira admin can start a trial or subscribe in Manage apps.</p>
 <h3>Install from source</h3>
 <p>You&#x27;ll need Node.js 22 and the Forge CLI.</p>
 <pre><code>npm install
 forge register        # replaces REPLACE_ME in manifest.yml with your app id
 forge deploy -e development
 forge install --product jira</code></pre>
+<p>A development install gets no license object unless you add <code>--license active</code> (or <code>inactive</code>, or <code>trial</code>) to <code>forge install</code>. Without one, the earlier list stays off, the same as an unlicensed site.</p>
 <p>Run the checks with <code>npm test</code> (unit tests), <code>npm run validate</code> (offline manifest check, plus a check that every module key exists in the Forge schema) and <code>npm run check-frontend</code> (UI Kit sources and imports). The last two use the Forge CLI you have installed.</p>
 <h3>Support</h3>
 <p>Use the support link on the app&#x27;s Marketplace listing. Include the message the panel or settings page showed.</p>

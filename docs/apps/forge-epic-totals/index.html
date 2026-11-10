@@ -6,7 +6,7 @@
 .support h3{margin:18px 0 4px;font-size:17px}.support ul{margin:6px 0 0;padding-left:20px}.support li{margin:6px 0}
 @media(prefers-color-scheme:dark){.support{border-color:var(--line,#2a2f36);background:var(--card,#1a1e23)}.support .btn-sponsor{background:var(--acc,#7da2ff);border-color:var(--acc,#7da2ff);color:#0b0d10}}
 </style></head><body><header><img src="logo.png" alt=""><h1>Epic Totals</h1></header><nav><a href="index.html">Documentation</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="../../index.html">All products</a><a href="../../vscode/index.html">VS Code extensions</a><a href="../../apify/index.html">Apify Actors</a></nav><h2>Epic Totals for Jira</h2>
-<p>Epic Totals adds up the children of an epic, or of any parent work item, and shows the result where you already look. Story points, original estimate, time logged, time remaining and counts by status sit in one issue panel. A dashboard gadget does the same for a whole list of epics picked with JQL.</p>
+<p>Epic Totals adds up the children of an epic, or of any parent work item, and shows the result where you already look. Story points, original estimate, time logged, time remaining and counts by status sit in one issue panel, which is free. A dashboard gadget (paid feature) does the same for a whole list of epics picked with JQL.</p>
 <p>Jira&#x27;s own roll-ups live in Plans, which needs Premium or Enterprise. This app works on Standard too, and it doesn&#x27;t ask you to build an Automation rule for every sum.</p>
 <h3>What you see on an epic</h3>
 <p>Open any epic and add the Epic Totals panel from the Apps button. It reads the epic&#x27;s children as you, so it only counts what you&#x27;re allowed to see.</p>
@@ -16,7 +16,8 @@
 <p>By default the panel reads two levels, so an epic picks up its stories and their sub-tasks. Each work item adds its own values exactly once. The app never reads Jira&#x27;s aggregate time fields, because those already contain sub-task time and would count it twice.</p>
 <p>Work item progress always counts the direct children. Story points come from the direct children unless you switch Options to count every level. Time always adds up every level you&#x27;ve included. If you switch to one level, the panel tells you that sub-task time is left out.</p>
 <p>The parent&#x27;s own estimate and logged time aren&#x27;t part of the totals. They&#x27;re still on the work item itself.</p>
-<h3>The dashboard gadget</h3>
+<h3>The dashboard gadget (paid)</h3>
+<p>The gadget is a paid feature. Without an active subscription or trial it shows &quot;The dashboard gadget is a paid feature of Epic Totals. A Jira admin can start a free trial or subscribe in Manage apps.&quot; The issue panel keeps working either way.</p>
 <p>Add the Epic Totals gadget to a dashboard and enter a JQL query for the parents, for example <code>project = ABC AND issuetype = Epic AND statusCategory != Done ORDER BY rank</code>. You get one row per parent with its status, children done, points, time logged, time remaining and a progress bar. Rows keep the order of your query.</p>
 <p>These are the gadget settings.</p>
 <ul><li>Up to 10, 25 or 50 parents.</li><li>An optional child filter in JQL, such as <code>issuetype != Bug</code>, that narrows which children are counted at every level.</li><li>Progress bars based on work items done, story points done, or time.</li><li>One or two levels, and which levels story points come from.</li><li>A story points field of your choice, or none at all.</li></ul>
