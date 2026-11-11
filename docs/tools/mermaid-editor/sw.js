@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-mermaid-editor-18ee6f9eee6f';
+const CACHE = 'zovo-mermaid-editor-4093e6490ff1';
 const FILES = ["./", "tool.css", "app.js", "templates.js", "viewer.html", "host.js", "mermaid.min.js", "svgtools.js", "preview.js", "preview.css", "vars.css", "NOTICES.txt", "mermaid-LICENSE.txt"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-mermaid-editor-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

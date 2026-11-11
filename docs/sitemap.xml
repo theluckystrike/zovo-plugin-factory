@@ -19,6 +19,7 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/claude-code-history-viewer/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/code-screenshot-vscode/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/compare-binary-files/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/compare-folders-vscode/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/compare-netcdf-files/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/compare-pytorch-checkpoints/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/compare-two-zip-files/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
@@ -162,6 +163,7 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/sarif-viewer-vscode/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/skills-manager-vscode/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/spreadsheet-editor-vscode/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/spss-stata-viewer-vscode/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/sql-formatter-vscode/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/sqlite-viewer-vscode/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/svg-viewer-vscode/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
