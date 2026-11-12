@@ -37,6 +37,7 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/docx-redline/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/docx-to-markdown/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/dxf-to-csv/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/edit-sqlite-database-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/er-diagram-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/export-claude-code-conversation/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/export-track-changes-word-to-excel/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
@@ -68,12 +69,14 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/open-parquet-file-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/open-pdf-in-cursor/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/open-pdf-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/open-word-or-powerpoint-without-office/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/parquet-query/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/parquet-viewer-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/pcap-to-csv/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/pcap-viewer-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/pickle-to-json/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/pkl-file-viewer-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/play-mov-mkv-video-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/postgres-client-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/postgres-explain-plan-visualizer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/open/postgres-schema-compare/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
@@ -193,7 +196,7 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/tiff-viewer-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/video-preview-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/vscode/xmind-viewer-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
-  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/apps/</loc><lastmod>2026-11-11</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/apps/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/apps/forge-askspace/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/apps/forge-askspace/privacy.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/apps/forge-askspace/support.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
@@ -251,14 +254,14 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/apps/forge-watching-now/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/apps/forge-watching-now/privacy.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/apps/forge-watching-now/support.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
-  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/growth.html</loc><lastmod>2026-11-11</lastmod><priority>0.5</priority></url>
-  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/insights.html</loc><lastmod>2026-11-11</lastmod><priority>0.5</priority></url>
-  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/kpi.html</loc><lastmod>2026-11-11</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/growth.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/insights.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/kpi.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/money.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
-  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/next.html</loc><lastmod>2026-11-11</lastmod><priority>0.5</priority></url>
-  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/plan.html</loc><lastmod>2026-11-11</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/next.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/plan.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/pro.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
-  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/products.html</loc><lastmod>2026-11-11</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/products.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/report.html</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/shopify/</loc><lastmod>2026-11-11</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/shopify/hide-shipping-payment/</loc><lastmod>2026-11-11</lastmod><priority>0.5</priority></url>
