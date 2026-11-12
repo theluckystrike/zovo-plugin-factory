@@ -841,4 +841,34 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/zh-tw/open/stl-viewer-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/zh-tw/open/tiff-to-png/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/zh-tw/open/xmind-to-pdf/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/de/open/browse-s3-bucket-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/de/open/format-shell-script-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/es/open/browse-s3-bucket-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/es/open/format-shell-script-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/fr/open/browse-s3-bucket-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/fr/open/edit-env-file-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/fr/open/format-shell-script-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/fr/open/image-preview-on-hover-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/ja/open/browse-s3-bucket-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/ja/open/format-shell-script-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/ko/open/browse-s3-bucket-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/ko/open/edit-env-file-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/ko/open/format-shell-script-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/ko/open/image-preview-on-hover-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/pl/open/browse-s3-bucket-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/pl/open/edit-env-file-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/pl/open/format-shell-script-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/pl/open/image-preview-on-hover-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/pt-br/open/browse-s3-bucket-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/pt-br/open/edit-env-file-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/pt-br/open/format-shell-script-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/pt-br/open/image-preview-on-hover-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/ru/open/browse-s3-bucket-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/ru/open/edit-env-file-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/ru/open/format-shell-script-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/ru/open/image-preview-on-hover-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/zh-cn/open/browse-s3-bucket-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/zh-cn/open/edit-env-file-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/zh-cn/open/format-shell-script-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/zh-cn/open/image-preview-on-hover-in-vscode/</loc><lastmod>2026-11-12</lastmod><priority>0.5</priority></url>
 </urlset>
