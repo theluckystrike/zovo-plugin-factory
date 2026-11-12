@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-sarif-viewer-06a39037dd41';
+const CACHE = 'zovo-sarif-viewer-389fcf2915be';
 const FILES = ["./", "tool.css", "common.js", "app.js", "sample.js", "tc2.css"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-sarif-viewer-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

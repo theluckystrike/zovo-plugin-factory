@@ -154,6 +154,7 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/can-dbc-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/code-screenshot/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/csv-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/dbml-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/dicom-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/docx-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/dxf-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
@@ -171,10 +172,12 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/image-resize-crop/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/intel-hex-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/js-scratchpad/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/json-tree-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/jsonl-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/linker-map-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/mermaid-editor/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/npy-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/openapi-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/parquet-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/pdf-dark-mode/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/pptx-viewer/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority></url>
