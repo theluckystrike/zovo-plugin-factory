@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-dxf-viewer-63efb95be7e3';
+const CACHE = 'zovo-dxf-viewer-f45b0926f167';
 const FILES = ["./", "tool.css", "app.js", "sample.js", "viewer.html", "host.js", "webview.js", "worker.js", "webview.css", "vars.css", "NOTICES.txt"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-dxf-viewer-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

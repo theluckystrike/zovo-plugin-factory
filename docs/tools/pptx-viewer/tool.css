@@ -109,3 +109,4 @@ zovo-doc-viewer { display: block; height: 78vh; min-height: 420px; border: 1px s
 .edgrid #frameBox { min-width: 0; }
 #msg button.link { background: none; border: 0; padding: 0; color: var(--acc); text-decoration: underline; cursor: pointer; font: inherit; }
 @media (max-width: 860px) { .edgrid { grid-template-columns: 1fr; } #code { height: 40vh; min-height: 240px; } .edgrid #frameBox iframe { height: 60vh; min-height: 360px; } }
+#listing.card { margin: 12px 0; } #listing.card ul { margin: 4px 0 0; }
