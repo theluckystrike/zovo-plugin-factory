@@ -1,0 +1,28 @@
+/* Text Diff Online (TOOLCHK3, wave18) */
+.tdv [hidden], #pasteRow[hidden] { display: none !important; }
+#pasteRow { text-align: center; margin: 8px 0 0; }
+.tdin { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+.tdside .docbar { margin: 4px 0; }
+.tdside textarea { width: 100%; height: 22vh; min-height: 140px; resize: vertical; font: 13px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; tab-size: 4;
+  background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: 8px; white-space: pre; overflow: auto; }
+.tdside textarea:focus-visible { outline: 2px solid var(--acc); outline-offset: -1px; }
+.tdopts { font-size: 14px; gap: 6px 16px; }
+.tdopts select { font: inherit; font-size: 14px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.tdcounts { font-weight: 600; }
+.tdcounts .a { color: var(--ok); } .tdcounts .d { color: var(--warn); }
+.tdwrap { max-height: 72vh; }
+.tdtab { border-collapse: collapse; width: 100%; font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; tab-size: 4; }
+.tdtab td { padding: 0 6px; vertical-align: top; white-space: pre; }
+.tdtab td.ln { width: 1%; text-align: right; color: var(--mut); user-select: none; border-right: 1px solid var(--line); }
+.tdtab td.sg { width: 1%; color: var(--mut); user-select: none; padding: 0 2px 0 4px; }
+.tdtab.split td.tx { width: 49%; }
+.tdtab.split td.tx.l { border-right: 1px solid var(--line); }
+.tdtab td.del, .tdtab td.sg.del { background: color-mix(in srgb, #e5484d 16%, var(--bg)); }
+.tdtab td.add, .tdtab td.sg.add { background: color-mix(in srgb, #2ea043 16%, var(--bg)); }
+.tdtab td.emp { background: repeating-linear-gradient(135deg, transparent 0 6px, color-mix(in srgb, var(--line) 45%, transparent) 6px 7px); }
+.tdtab del { text-decoration: none; background: color-mix(in srgb, #e5484d 42%, var(--bg)); border-radius: 2px; }
+.tdtab ins { text-decoration: none; background: color-mix(in srgb, #2ea043 42%, var(--bg)); border-radius: 2px; }
+.tdtab tr.gap td { background: var(--panel); color: var(--mut); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 12px; text-align: center; padding: 2px 6px; }
+.tdtab tr.gap button { font-size: 12px; padding: 1px 8px; }
+.tdtab tr.cur td.sg { box-shadow: inset 3px 0 0 var(--acc); }
+@media (max-width: 900px) { .tdin { grid-template-columns: 1fr; } }

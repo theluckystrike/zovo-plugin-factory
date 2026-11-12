@@ -1,0 +1,17 @@
+/* GeoJSON Map Online (TOOLCHK3, wave18) */
+.gmv [hidden] { display: none !important; }
+.gmv h3 { font-size: 15px; margin: 14px 0 6px; }
+.gmv .side h3:first-child { margin-top: 4px; }
+.gmv .side { max-height: min(68vh, 640px); }
+.gmv .stage { background: var(--panel); }
+.gmscale { position: absolute; right: 10px; bottom: 8px; font-size: 11px; color: var(--fg); border: 2px solid var(--fg); border-top: 0; padding: 0 4px; pointer-events: none; background: color-mix(in srgb, var(--bg) 70%, transparent); }
+.gmscale:empty { display: none; }
+.gmlayers label { display: block; font-size: 14px; margin: 2px 0; }
+.gmlayers .n { color: var(--mut); font-size: 12px; }
+.gmprof { display: block; width: 100%; height: 90px; margin-top: 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
+.gmbtns { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 8px; }
+.gmprops td { white-space: pre-wrap; font-size: 13px; }
+.gmv #ffilter { flex: 1 1 220px; max-width: 420px; font: inherit; font-size: 14px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.gmv .docbar h3 { margin: 6px 0; }
+@media (max-width: 900px) { .gmv .tfgrid { grid-template-columns: 1fr; } .gmv .side { max-height: none; } }
+@media (max-width: 600px) { .gmv .stage { height: 60vh; } }

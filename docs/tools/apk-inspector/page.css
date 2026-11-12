@@ -1,0 +1,23 @@
+/* APK Inspector (TOOLCHK3, wave18): tabs, the method bars and the manifest text. Uses the tool.css variables. */
+.apkv .apktitle { font-size: 19px; margin: 10px 0 6px; word-break: break-word; }
+.apkv h3 { font-size: 15px; margin: 14px 0 6px; }
+.apkv .apkwarn { border: 1px solid var(--line); border-left: 3px solid var(--warn); border-radius: 6px; padding: 6px 12px; margin: 8px 0; background: var(--panel); }
+.apkv .apkwarn h3 { margin: 4px 0; }
+.apkv .apkwarn ul { margin: 4px 0; padding-left: 18px; }
+.apkv .apktabs { display: flex; flex-wrap: wrap; gap: 4px; margin: 10px 0 8px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+.apkv .apktabs button { font-size: 13px; padding: 5px 10px; }
+.apkv .apktabs button[aria-selected="true"] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+.apkv .apkpane .docbar input[type=search] { min-width: 220px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); font: inherit; }
+.apkv .dtab th.num, .apkv .dtab td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.apkv .dtab td { word-break: break-word; }
+.apkv .apkxml { background: var(--code); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; overflow: auto; max-height: 70vh; font: 12.5px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; tab-size: 4; }
+.apkv .apkbars { display: grid; gap: 6px; margin: 6px 0; }
+.apkv .apkbar { display: grid; grid-template-columns: minmax(110px, auto) minmax(120px, 1fr) auto; gap: 10px; align-items: center; }
+.apkv .apkbar .track { height: 12px; border-radius: 6px; background: var(--panel); border: 1px solid var(--line); overflow: hidden; }
+.apkv .apkbar .fill { display: block; height: 100%; background: var(--acc); }
+.apkv .apkbar .fill.hi { background: var(--warn); }
+@media (max-width: 600px) {
+  .apkv .apkbar { grid-template-columns: 1fr; gap: 2px; }
+  .apkv .apkpane .docbar input[type=search] { min-width: 0; width: 100%; }
+}
+.apkv .apkbar .mono { font-size: 13px; }

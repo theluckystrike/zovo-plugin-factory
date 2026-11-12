@@ -1,0 +1,33 @@
+/* Linker Map Viewer Online (TOOLCHK3, wave18): region bars, totals, tabs and the table with a detail panel.
+   Every rule is scoped under .lmv. */
+.lmv h3 { font-size: 15px; margin: 14px 0 6px; }
+.lmv select, .lmv input[type=search] { font: inherit; font-size: 14px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.lmv input[type=search] { width: 260px; max-width: 100%; }
+.lmv #warns { border: 1px solid var(--warn); border-radius: 8px; padding: 6px 10px; margin: 6px 0; color: var(--warn); }
+.lmv #warns div { margin: 2px 0; }
+.lmv .lmregions { display: grid; gap: 8px; }
+.lmv .reg { display: grid; grid-template-columns: minmax(90px, 160px) minmax(0, 1fr) minmax(150px, 230px); gap: 10px; align-items: center; font-size: 14px; }
+.lmv .reg .rn { font-weight: 600; word-break: break-all; }
+.lmv .reg .rn small { display: block; font-weight: 400; color: var(--mut); font-family: ui-monospace, Menlo, Consolas, monospace; }
+.lmv .rbar { display: flex; height: 18px; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; background: var(--panel); }
+.lmv .rbar i { display: block; height: 100%; min-width: 0; }
+.lmv .reg .rv { font-variant-numeric: tabular-nums; }
+.lmv .reg.over .rv { color: var(--warn); font-weight: 600; }
+.lmv .reg.over .rbar { border-color: var(--warn); }
+.lmv .c0 { background: #3b82f6; } .lmv .c1 { background: #a855f7; } .lmv .c2 { background: #f59e0b; } .lmv .c3 { background: #10b981; } .lmv .c4 { background: #94a3b8; }
+.lmv .legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 6px 0; color: var(--mut); }
+.lmv .legend .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.lmv .stats .st { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--panel); }
+.lmv .stats .st b { display: block; font-size: 17px; font-variant-numeric: tabular-nums; }
+.lmv .stats .st span { font-size: 12px; color: var(--mut); }
+.lmv .lmtabs { gap: 6px; margin-top: 18px; }
+.lmv .lmtabs button[aria-selected="true"] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+.lmv .dtab td.num, .lmv .dtab th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.lmv .dtab td.mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+.lmv .lmgrid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 14px; align-items: start; }
+.lmv .lmdetail { max-height: 70vh; font-size: 13px; }
+.lmv .lmdetail h4 { margin: 2px 0 6px; font-size: 14px; word-break: break-all; }
+.lmv .lmdetail ul { margin: 4px 0; padding-left: 18px; }
+.lmv .lmdetail li { word-break: break-all; }
+@media (max-width: 900px) { .lmv .lmgrid { grid-template-columns: 1fr; } .lmv .reg { grid-template-columns: 1fr; gap: 3px; } }
+.lmv [hidden] { display: none !important; }

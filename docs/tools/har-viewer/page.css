@@ -1,0 +1,22 @@
+/* HAR Viewer (TOOLCHK, wave18) */
+.hrv #q { font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); width: 220px; }
+.hrv select { font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.hrv .banner { border: 1px solid var(--warn); border-radius: 8px; padding: 8px 12px; margin: 8px 0; font-size: 14px; }
+.hrv #reqs thead th { cursor: pointer; }
+.hrv #reqs td.u { max-width: 460px; }
+.hrv #reqs tr.on td { background: var(--sel); }
+.hrv #reqs td.bad { color: var(--warn); font-weight: 600; }
+.hrv .wf { position: relative; width: 240px; height: 12px; }
+.hrv .wf span { position: absolute; top: 0; height: 12px; display: flex; min-width: 2px; }
+.hrv .wf i { display: block; height: 12px; }
+.hrv .seg { display: inline-block; width: 10px; height: 10px; border-radius: 2px; vertical-align: -1px; margin-left: 8px; }
+.s-blocked { background: #9aa3ae; } .s-dns { background: #1d9a8a; } .s-connect { background: #e08a1e; } .s-ssl { background: #a35ad6; }
+.s-send { background: #d6455d; } .s-wait { background: #2fa14a; } .s-receive { background: #0b62d6; } .s-other { background: var(--acc); }
+.hrv .tabb[aria-pressed="true"] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+.hrv .dpane { padding: 8px 12px; max-height: 480px; }
+.hrv .dpane pre { white-space: pre-wrap; word-break: break-all; font-size: 13px; margin: 6px 0; }
+.hrv .dpane h4 { margin: 10px 0 4px; font-size: 14px; }
+.hrv .dpane img { max-width: 100%; max-height: 360px; background: repeating-conic-gradient(var(--line) 0 25%, transparent 0 50%) 0 0 / 16px 16px; }
+.hrv .kv td { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+.hrv .sp { flex: 1; }
+[hidden] { display: none !important; }

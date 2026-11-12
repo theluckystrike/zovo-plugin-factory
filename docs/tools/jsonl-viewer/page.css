@@ -1,0 +1,18 @@
+/* JSONL Viewer (TOOLCHK, wave18) */
+.jlv #q { font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); width: 260px; }
+.jlv .sp { flex: 1; }
+.jlv #recs thead th { cursor: pointer; vertical-align: bottom; }
+.jlv #recs thead th small { display: block; font-weight: 400; color: var(--mut); font-size: 11px; }
+.jlv #recs tr.on td { background: var(--sel); }
+.jlv #recs tr.bad td { color: var(--warn); }
+.jlv td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.jlv .t-number { color: var(--acc); } .jlv .t-boolean { color: #a0458f; } .jlv .t-null, .jlv .t-miss { color: var(--zero); font-style: italic; }
+.jlv #vals .bar { display: inline-block; height: 9px; background: var(--acc); border-radius: 2px; vertical-align: middle; margin-right: 6px; min-width: 1px; }
+.jlv #recJson { padding: 10px 12px; margin: 6px 0; white-space: pre-wrap; word-break: break-word; font-size: 13px; }
+.jlv #chat { display: grid; gap: 8px; margin: 8px 0; }
+.jlv .msg { border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; background: var(--panel); white-space: pre-wrap; word-break: break-word; font-size: 14px; }
+.jlv .msg b { display: block; font-size: 12px; color: var(--mut); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 2px; }
+.jlv .msg.user { border-color: var(--acc); }
+.jlv .msg.assistant { background: var(--bg); }
+.jlv .msg code { display: block; white-space: pre-wrap; margin-top: 4px; }
+[hidden] { display: none !important; }

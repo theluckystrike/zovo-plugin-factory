@@ -1,0 +1,15 @@
+/* Code Screenshot (TOOLCHK3, wave18): options, the code box and the preview. Uses the tool.css variables. */
+.shotv .docbar { flex-wrap: wrap; gap: 8px; }
+.shotv .csopts { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin: 8px 0 12px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); font-size: 13px; }
+.shotv .csopts label { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.shotv .csopts select, .shotv .csopts input[type=text], .shotv .csopts input[type=number] { font: inherit; padding: 3px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.shotv .csopts input[type=number] { width: 76px; }
+.shotv .csopts input[type=text] { width: 130px; }
+.shotv .csopts input[type=range] { width: 90px; }
+.shotv .csopts input[type=color] { width: 36px; height: 26px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
+.shotv .csgrid { display: grid; grid-template-columns: minmax(260px, 2fr) minmax(0, 3fr); gap: 14px; align-items: start; }
+.shotv .cscode { display: flex; flex-direction: column; gap: 4px; }
+.shotv #code { width: 100%; box-sizing: border-box; min-height: 420px; resize: vertical; font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; tab-size: 4; background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: 10px; white-space: pre; overflow: auto; }
+.shotv .csstage { overflow: auto; max-height: 75vh; border: 1px dashed var(--line); border-radius: 8px; padding: 10px; background-color: var(--panel); background-image: linear-gradient(45deg, rgba(128,128,128,.12) 25%, transparent 25%, transparent 75%, rgba(128,128,128,.12) 75%), linear-gradient(45deg, rgba(128,128,128,.12) 25%, transparent 25%, transparent 75%, rgba(128,128,128,.12) 75%); background-size: 16px 16px; background-position: 0 0, 8px 8px; min-height: 120px; }
+.shotv .csstage svg { display: block; max-width: 100%; height: auto; cursor: pointer; }
+@media (max-width: 900px) { .shotv .csgrid { grid-template-columns: 1fr; } .shotv #code { min-height: 220px; } }

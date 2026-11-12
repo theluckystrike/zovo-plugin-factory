@@ -1,0 +1,26 @@
+/* HTML Preview Online (TOOLCHK3, wave18). Scoped to .hpv. */
+.hpv [hidden] { display: none !important; }
+.hpv select { font: inherit; font-size: 14px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.hpv .hptabs { border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.hpv .hptabs button[aria-selected=true] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+.hpv .hpnote { border: 1px solid var(--line); border-left: 4px solid var(--acc); border-radius: 6px; padding: 8px 12px; margin: 8px 0; font-size: 14px; background: var(--panel); }
+.hpv .hpnote p { margin: 2px 0; }
+.hpv .hpframe { border: 1px solid var(--line); border-radius: 8px; overflow: auto; background: var(--panel); height: min(74vh, 900px); }
+.hpv .hpframe iframe { display: block; border: 0; width: 100%; height: 100%; margin: 0 auto; background: #fff; color-scheme: light; }
+.hpv .hpframe.fixed iframe { border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+.hpv h3 { font-size: 15px; margin: 14px 0 6px; }
+.hpv .hpoutline { list-style: none; margin: 0; padding: 0; font-size: 14px; max-height: 60vh; overflow: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+.hpv .hpoutline li { padding: 3px 10px; border-bottom: 1px solid var(--line); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hpv .hpoutline li:last-child { border-bottom: 0; }
+.hpv .hpoutline .lv { display: inline-block; min-width: 2.2em; color: var(--mut); font: 12px ui-monospace, Menlo, Consolas, monospace; }
+.hpv .hpoutline .l2 { padding-left: 24px; } .hpv .hpoutline .l3 { padding-left: 42px; } .hpv .hpoutline .l4 { padding-left: 60px; }
+.hpv .hpoutline .l5 { padding-left: 78px; } .hpv .hpoutline .l6 { padding-left: 96px; }
+.hpv .hpoutline .empty { color: var(--warn); font-style: italic; }
+.hpv .ok { color: var(--ok); }
+.hpv .hpsrc { display: flex; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); max-height: 74vh; overflow: auto; font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.hpv .hpsrc pre { margin: 0; padding: 8px 10px; font: inherit; }
+.hpv #gutter { color: var(--mut); text-align: right; user-select: none; border-right: 1px solid var(--line); background: var(--panel); position: sticky; left: 0; }
+.hpv #src { flex: 1; white-space: pre; tab-size: 4; }
+.hpv #src:focus-visible { outline: 2px solid var(--acc); outline-offset: -2px; }
+.hpv .dtab td.st { white-space: normal; }
+@media (max-width: 900px) { .hpv .hpframe { height: 64vh; } }

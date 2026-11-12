@@ -1,0 +1,19 @@
+/* SQL Formatter Online (TOOLCHK3, wave18) */
+.sqv [hidden], #pasteRow[hidden] { display: none !important; }
+#pasteRow { text-align: center; margin: 8px 0 0; }
+.sqv h3 { font-size: 15px; margin: 14px 0 6px; }
+.sqopts { gap: 6px 10px; font-size: 14px; }
+.sqopts select { font: inherit; font-size: 14px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.sqopts label { color: var(--mut); }
+.sqopts label:has(input) { color: var(--fg); }
+.sqgrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+.sqgrid textarea { width: 100%; height: 56vh; min-height: 280px; resize: vertical; font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; tab-size: 4;
+  background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: 10px; white-space: pre; overflow: auto; }
+.sqgrid textarea:focus-visible { outline: 2px solid var(--acc); outline-offset: -1px; }
+.sqgrid #out { background: var(--panel); }
+.sqrefuse { border: 1px solid var(--warn); border-radius: 8px; padding: 8px 12px; margin: 8px 0; background: color-mix(in srgb, var(--warn) 8%, var(--bg)); }
+.sqrefuse p { margin: 4px 0; color: var(--warn); font-weight: 600; }
+.sqv .dtab td.bad { color: var(--warn); white-space: normal; max-width: 520px; }
+.sqv .dtab td.ok { color: var(--ok); }
+.sqv .dtab td.tb { white-space: normal; max-width: 420px; word-break: break-word; }
+@media (max-width: 900px) { .sqgrid { grid-template-columns: 1fr; } .sqgrid textarea { height: 40vh; } }

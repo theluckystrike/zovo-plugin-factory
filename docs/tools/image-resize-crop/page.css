@@ -1,0 +1,31 @@
+/* Image Resize and Crop Online (TOOLCHK3, wave18). Scoped to .irv. */
+.irv [hidden] { display: none !important; }
+.irv .irgrid { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 14px; align-items: start; }
+.irv .irstage { position: relative; display: flex; justify-content: center; align-items: center; min-height: 240px; border: 1px solid var(--line); border-radius: 8px; padding: 12px; touch-action: none; user-select: none; cursor: crosshair;
+  background-color: var(--panel); background-image: linear-gradient(45deg, color-mix(in srgb, var(--line) 60%, transparent) 25%, transparent 25%, transparent 75%, color-mix(in srgb, var(--line) 60%, transparent) 75%), linear-gradient(45deg, color-mix(in srgb, var(--line) 60%, transparent) 25%, transparent 25%, transparent 75%, color-mix(in srgb, var(--line) 60%, transparent) 75%);
+  background-size: 16px 16px; background-position: 0 0, 8px 8px; }
+.irv .irstage canvas { display: block; max-width: 100%; max-height: 66vh; }
+.irv .irshade { position: absolute; pointer-events: none; box-shadow: 0 0 0 9999px rgba(0, 0, 0, .45); }
+.irv .irstage { overflow: hidden; }
+.irv .irbox { position: absolute; border: 1px solid #fff; outline: 1px dashed #000; outline-offset: -1px; cursor: move; touch-action: none; }
+.irv .irbox:focus-visible { outline: 2px solid var(--acc); outline-offset: 1px; }
+.irv .irbox .h { position: absolute; width: 12px; height: 12px; background: #fff; border: 1px solid #000; border-radius: 2px; }
+.irv .irbox .nw { left: -6px; top: -6px; cursor: nwse-resize; } .irv .irbox .se { right: -6px; bottom: -6px; cursor: nwse-resize; }
+.irv .irbox .ne { right: -6px; top: -6px; cursor: nesw-resize; } .irv .irbox .sw { left: -6px; bottom: -6px; cursor: nesw-resize; }
+.irv .irbox .n { left: calc(50% - 6px); top: -6px; cursor: ns-resize; } .irv .irbox .s { left: calc(50% - 6px); bottom: -6px; cursor: ns-resize; }
+.irv .irbox .e { right: -6px; top: calc(50% - 6px); cursor: ew-resize; } .irv .irbox .w { left: -6px; top: calc(50% - 6px); cursor: ew-resize; }
+.irv .irbox .sz { position: absolute; left: 4px; top: 4px; font: 12px/1.3 ui-monospace, Menlo, Consolas, monospace; color: #fff; background: rgba(0, 0, 0, .65); padding: 1px 5px; border-radius: 3px; pointer-events: none; white-space: nowrap; }
+.irv .irside { max-height: none; }
+.irv .irside h3 { margin-top: 14px; }
+.irv .irrow { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin: 6px 0; font-size: 14px; }
+.irv .irrow input[type=number], .irv .irrow select { font: inherit; font-size: 14px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.irv .irrow input[type=number] { width: 82px; }
+.irv #customBox input { width: 56px; }
+.irv .irxy { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.irv .irxy label { display: flex; gap: 3px; align-items: center; min-width: 0; }
+.irv .irrow.irxy input[type=number] { width: 100%; min-width: 0; padding: 4px 3px; }
+.irv .irpre button { padding: 3px 9px; font-size: 13px; }
+.irv .irout { font-size: 14px; margin: 8px 0; }
+.irv .irout b { font-weight: 600; }
+.irv #save[aria-disabled=true] { opacity: .55; pointer-events: none; }
+@media (max-width: 900px) { .irv .irgrid { grid-template-columns: 1fr; } .irv .irstage canvas { max-height: 56vh; } }

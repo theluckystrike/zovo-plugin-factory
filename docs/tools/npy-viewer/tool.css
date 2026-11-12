@@ -147,3 +147,27 @@ zovo-doc-viewer { display: block; height: 78vh; min-height: 420px; border: 1px s
 .legend { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 6px 0 0; }
 .legend .lgbar { width: 220px; height: 10px; border-radius: 3px; }
 @media (max-width: 900px) { .npgrid { grid-template-columns: 1fr; } .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* WEB4 (wave18): HDF5 and NetCDF Viewer (object tree beside the details), TIFF Viewer (image stage with a facts panel). */
+.h5grid { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(0, 2fr); gap: 14px; margin: 8px 0; align-items: start; }
+.h5v h3, .tfv h3 { font-size: 15px; margin: 14px 0 6px; }
+.h5v .docbar h3 { margin: 6px 0; }
+#filter { width: 100%; box-sizing: border-box; font: inherit; font-size: 14px; padding: 6px 8px; margin-bottom: 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.tblwrap.tree { max-height: 72vh; }
+#tree td:first-child { padding-left: calc(10px + var(--d, 0) * 14px); }
+#tree .ico { color: var(--mut); }
+.dtab td.wrap { white-space: pre-wrap; word-break: break-word; max-width: 640px; }
+#leadBox { display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+#leadBox input { width: 84px; font: inherit; font-size: 14px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+#valBox[hidden], #chartWrap[hidden], #sliceBar[hidden], #cfBox[hidden], #geoBox[hidden], #pagesBox[hidden], #pageBox[hidden] { display: none; }
+.tfgrid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 14px; align-items: start; }
+.stage { position: relative; height: min(68vh, 640px); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; cursor: grab; touch-action: none;
+  background: var(--panel) repeating-conic-gradient(var(--line) 0 25%, transparent 0 50%) 0 0 / 16px 16px; }
+.stage.grab { cursor: grabbing; }
+.stage:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; }
+.stage canvas { display: block; }
+#readout { min-height: 1.4em; margin: 6px 0 0; }
+.stats.two { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 4px; }
+#hist { display: block; margin-top: 6px; }
+#tbar select { font: inherit; font-size: 14px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+#tbar button:disabled { opacity: .45; cursor: default; }
+@media (max-width: 900px) { .h5grid, .tfgrid { grid-template-columns: 1fr; } .stage { height: 56vh; } }
