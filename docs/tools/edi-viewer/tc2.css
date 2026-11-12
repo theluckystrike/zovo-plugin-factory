@@ -1,0 +1,98 @@
+/* TOOLCHK2 (wave18): extra styles for the SARIF, DBML, EDI, Intel HEX, DBC, regex, OpenAPI and JSON tools.
+   Loaded after tool.css; uses its color variables, so light and dark themes follow it. */
+.tcv h3 { font-size: 15px; margin: 14px 0 6px; }
+.tcgrid { display: grid; grid-template-columns: minmax(250px, 1fr) minmax(0, 2.2fr); gap: 14px; margin: 8px 0; align-items: start; }
+.tcgrid .tblwrap { max-height: 70vh; }
+.tcside input[type=search], .tcbar input[type=search], .tcbar input[type=text], .tcbar select {
+  font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.tcside input[type=search] { width: 100%; box-sizing: border-box; margin-bottom: 6px; }
+.tcbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 6px 0; }
+.tcbar label { font-size: 14px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px; margin: 10px 0 6px; border-bottom: 1px solid var(--line); }
+.tabs button { border-radius: 6px 6px 0 0; border-bottom: 0; }
+.tabs button[aria-selected="true"] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+.pill { display: inline-block; padding: 0 7px; border-radius: 10px; font-size: 12px; line-height: 18px; border: 1px solid var(--line); background: var(--bg); white-space: nowrap; }
+.pill.error, .pill.bad, .pill.DELETE { color: #fff; background: #b42318; border-color: #b42318; }
+.pill.warning, .pill.PUT, .pill.PATCH { color: #1b1f24; background: #f4c542; border-color: #d9a90f; }
+.pill.note, .pill.GET { color: #fff; background: #0b62d6; border-color: #0b62d6; }
+.pill.none, .pill.HEAD, .pill.OPTIONS, .pill.TRACE { color: var(--fg); background: var(--panel); }
+.pill.ok, .pill.POST { color: #fff; background: #116329; border-color: #116329; }
+.pre { white-space: pre-wrap; word-break: break-word; font: 13px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--code); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; margin: 6px 0; max-height: 50vh; overflow: auto; }
+.pre .hl { background: var(--sel); outline: 1px solid var(--acc); border-radius: 2px; }
+.pre mark, .hlbox mark { background: #ffe58a; color: #1b1f24; border-radius: 2px; }
+.pre mark.alt, .hlbox mark.alt { background: #a8e1ff; }
+.pre .ln { color: var(--mut); user-select: none; display: inline-block; min-width: 3.5em; }
+.det { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: var(--bg); min-width: 0; }
+.det h3:first-child { margin-top: 0; }
+.problems li { margin: 2px 0; }
+.problems .sev { font-weight: 600; }
+/* DBC bit layout */
+.bitswrap { display: inline-block; max-width: 100%; max-height: 420px; }
+.bits { border-collapse: collapse; font: 12px ui-monospace, Menlo, Consolas, monospace; margin: 6px 0; }
+.bits th { color: var(--mut); font-weight: 500; padding: 2px 6px; }
+.bits td { width: 64px; height: 30px; border: 1px solid var(--line); text-align: center; vertical-align: middle; padding: 0 2px; overflow: hidden; }
+.bits td .bn { display: block; font-size: 10px; color: var(--mut); }
+.bits td .sn { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 62px; }
+.bits td.msb { box-shadow: inset 3px 0 0 var(--fg); }
+.bits td.lap { outline: 2px solid #b42318; outline-offset: -2px; }
+/* Intel HEX memory map */
+.memmap { display: flex; height: 26px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--panel); margin: 6px 0 2px; }
+.memmap span { display: block; height: 100%; min-width: 2px; }
+.memmap .d { background: var(--acc); }
+.memmap .g { background: transparent; }
+.memmap .o { background: #b42318; }
+.hexdump { font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; overflow: auto; max-height: 60vh; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--bg); }
+.hexdump .ad { color: var(--mut); }
+.hexdump .gap { color: var(--zero); }
+/* DBML ER diagram */
+.erwrap { border: 1px solid var(--line); border-radius: 8px; background: var(--bg); overflow: auto; max-height: 78vh; }
+.erwrap svg { display: block; }
+.er-t rect.box { fill: var(--bg); stroke: var(--line); }
+.er-t rect.head { fill: var(--acc); }
+.er-t text { fill: var(--fg); font: 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.er-t text.hd { fill: var(--acc-fg); font-weight: 700; }
+.er-t text.ty { fill: var(--mut); }
+.er-t text.pk { font-weight: 700; }
+.er-r { fill: none; stroke: var(--mut); stroke-width: 1.4; }
+.er-r.on, .er-t.on rect.box { stroke: var(--acc); stroke-width: 2.2; }
+.er-g { fill: color-mix(in srgb, var(--acc) 6%, transparent); stroke: var(--line); stroke-dasharray: 4 3; }
+.er-gl { fill: var(--mut); font: 12px system-ui, sans-serif; }
+.er-card { fill: var(--mut); font: 11px system-ui, sans-serif; }
+/* EDI and JSON trees */
+.jtree { font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow: auto; max-height: 72vh; border: 1px solid var(--line); border-radius: 8px; padding: 6px 4px; background: var(--bg); }
+.jtree .r { display: flex; gap: 6px; align-items: baseline; padding: 0 6px 0 calc(6px + var(--d, 0) * 16px); white-space: nowrap; cursor: default; border-radius: 4px; }
+.jtree .r:hover { background: var(--panel); }
+.jtree .r.on { background: var(--sel); }
+.jtree .r.hit .k, .jtree .r.hit .v { background: #ffe58a; color: #1b1f24; }
+.jtree .tw { all: unset; cursor: pointer; width: 1em; text-align: center; color: var(--mut); flex: none; }
+.jtree .tw:focus-visible { outline: 2px solid var(--acc); }
+.jtree .k { color: var(--acc); }
+.jtree .v { overflow: hidden; text-overflow: ellipsis; }
+.jtree .v.s { color: #0a7f3f; } .jtree .v.n { color: #b45309; } .jtree .v.b, .jtree .v.z { color: #7c3aed; }
+:root[data-theme="dark"] .jtree .v.s { color: #6fd08c; } :root[data-theme="dark"] .jtree .v.n { color: #f0a37a; } :root[data-theme="dark"] .jtree .v.b, :root[data-theme="dark"] .jtree .v.z { color: #c4a5ff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .jtree .v.s { color: #6fd08c; } :root:not([data-theme="light"]) .jtree .v.n { color: #f0a37a; } :root:not([data-theme="light"]) .jtree .v.b, :root:not([data-theme="light"]) .jtree .v.z { color: #c4a5ff; } }
+.jtree .c { color: var(--mut); }
+.jtree .seg { font-weight: 700; }
+.jtree .ann { color: var(--mut); font-family: system-ui, sans-serif; font-size: 12px; }
+/* Regex tester */
+.rxgrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; align-items: start; }
+.rxin { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.rxin .slash { font: 18px ui-monospace, Menlo, Consolas, monospace; color: var(--mut); }
+#pattern, #flags, #replace { font: 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); box-sizing: border-box; }
+#pattern { flex: 1; min-width: 200px; }
+#flags { width: 90px; }
+#replace { width: 100%; }
+#pattern.bad { border-color: var(--warn); }
+.rxtext { position: relative; }
+#text { width: 100%; box-sizing: border-box; min-height: 260px; height: 40vh; resize: vertical; font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
+.hlbox { white-space: pre-wrap; word-break: break-word; font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; background: var(--bg); max-height: 40vh; overflow: auto; margin: 6px 0; }
+.expl { list-style: none; padding: 0; margin: 6px 0; font-size: 14px; }
+.expl li { padding: 2px 0 2px calc(var(--d, 0) * 18px); }
+.expl code { white-space: pre; }
+@media (max-width: 860px) { .tcgrid, .rxgrid { grid-template-columns: 1fr; } }
+.tcgrid.wide { grid-template-columns: minmax(0, 3fr) minmax(280px, 2fr); }
+.dtab tr.grp th { background: var(--panel); font-weight: 600; position: static; }
+.ok { color: var(--ok); }
+.hexdump .b { cursor: pointer; border-radius: 2px; }
+.hexdump .b:hover { background: var(--panel); }
+.hexdump .b.on { background: var(--sel); outline: 1px solid var(--acc); }
