@@ -1,0 +1,30 @@
+/* Dotenv Validator (TOOLCHK4, wave18) */
+[hidden] { display: none !important; }
+.dvpaste { margin: 10px 0; }
+.dvpaste summary { cursor: pointer; color: var(--acc); }
+.dvpaste textarea { width: 100%; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); margin-top: 8px; }
+.dev h3 { font-size: 16px; margin: 18px 0 6px; }
+.dev .docbar { flex-wrap: wrap; gap: 8px; align-items: center; }
+.dev select, .dev input[type=search] { font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.dev button:disabled { opacity: .5; cursor: default; }
+.dev .lv { font-size: 12px; font-weight: 700; padding: 0 6px; border-radius: 4px; border: 1px solid currentColor; white-space: nowrap; }
+.dev .lv.error { color: #c62828; } .dev .lv.warning { color: var(--warn); } .dev .lv.info { color: var(--acc); }
+:root[data-theme="dark"] .dev .lv.error { color: #ff8a80; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .dev .lv.error { color: #ff8a80; } }
+.dev .mono, .dev #keys td.v { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+.dev #keys td.v { max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dev .masked { color: var(--mut); letter-spacing: 1px; }
+.dev .tagx { font-size: 11px; color: var(--mut); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; margin-left: 6px; }
+.dev .sec { color: var(--warn); }
+.dev .ok { color: var(--ok); }
+.dev td button { font-size: 12px; padding: 2px 8px; }
+.dvsrc { border: 1px solid var(--line); border-radius: 8px; overflow: auto; max-height: 520px; background: var(--code); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; }
+.dvsrc .ln { display: flex; white-space: pre; }
+.dvsrc .ln .n { flex: 0 0 auto; min-width: 44px; padding: 0 8px; text-align: right; color: var(--mut); user-select: none; border-right: 1px solid var(--line); }
+.dvsrc .ln .c { padding: 0 8px; }
+.dvsrc .ln.err { background: rgba(198, 40, 40, .14); } .dvsrc .ln.warn { background: rgba(154, 52, 18, .12); } .dvsrc .ln.info { background: var(--sel); }
+.dvsrc .ln.flash { outline: 2px solid var(--acc); }
+.dvsrc .cm { color: var(--mut); }
+.dvsrc .k { color: var(--acc); }
+.dev #probs td { white-space: normal; vertical-align: top; } .dev #probs td:last-child { min-width: 220px; }
+@media (max-width: 640px) { .dev #probs td:last-child { min-width: 0; } .dev #probs td:last-child .small { display: none; } }
