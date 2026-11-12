@@ -1,0 +1,11 @@
+/* Audio Waveform and Loudness (TOOLCHK, wave18) */
+[hidden] { display: none !important; }
+.awv audio { flex: 1; min-width: 260px; }
+.awv select { font: inherit; font-size: 14px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.awv .lanewrap { position: relative; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--bg); cursor: pointer; touch-action: none; }
+.awv #lanes canvas { display: block; width: 100%; }
+.awv #lanes canvas.wv { border-bottom: 1px solid var(--line); }
+.awv #head { position: absolute; top: 0; bottom: 0; width: 2px; background: #e5484d; pointer-events: none; left: 0; }
+.awv #loopBand { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--acc) 22%, transparent); pointer-events: none; }
+.awv h3 { font-size: 15px; margin: 14px 0 6px; }
+.awv .stats.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }

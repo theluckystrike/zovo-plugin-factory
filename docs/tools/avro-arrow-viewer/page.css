@@ -1,0 +1,8 @@
+/* Avro, Arrow and Feather Viewer (TOOLCHK, wave18) */
+[hidden] { display: none !important; }
+.aav h3 { font-size: 15px; margin: 14px 0 6px; }
+.aav #rows thead th { cursor: pointer; vertical-align: bottom; }
+.aav #rows thead th small { display: block; font-weight: 400; color: var(--mut); font-size: 11px; }
+.aav td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.aav #schemaJson { padding: 8px 12px; font-size: 12.5px; white-space: pre; }
+.aav #meta td { word-break: break-all; white-space: normal; }

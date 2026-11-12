@@ -1,0 +1,18 @@
+/* XMind Viewer (TOOLCHK, wave18) */
+[hidden] { display: none !important; }
+.xmv #tabs button[aria-pressed="true"], .xmv #modes button[aria-pressed="true"] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+.xmv #mbox { height: 560px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--bg); cursor: grab; touch-action: none; }
+.xmv #msvg { width: 100%; height: 100%; }
+.xmv .edge { fill: none; stroke: var(--mut); stroke-width: 1.5; }
+.xmv .rel { fill: none; stroke: #e08a1e; stroke-width: 1.5; stroke-dasharray: 5 4; }
+.xmv .rlab { fill: #e08a1e; font-size: 12px; }
+.xmv .node { fill: var(--panel); stroke: var(--line); }
+.xmv .node.d0 { fill: var(--acc); stroke: var(--acc); } .xmv .node.d1 { stroke: var(--acc); }
+.xmv .nt { fill: var(--fg); font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; } .xmv .nt.r { fill: var(--acc-fg); font-weight: 600; }
+.xmv #outline { border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px 10px 28px; max-height: 620px; overflow: auto; }
+.xmv #outline ul { padding-left: 22px; border-left: 1px solid var(--line); margin: 2px 0 2px 4px; }
+.xmv .ot { padding: 2px 0; } .xmv .ot.root { font-weight: 700; font-size: 17px; }
+.xmv .mk, .xmv .lb, .xmv .lk { font-size: 11px; border: 1px solid var(--line); border-radius: 10px; padding: 0 7px; margin-left: 6px; color: var(--mut); }
+.xmv .lb { border-color: var(--acc); color: var(--acc); } .xmv .lk { word-break: break-all; }
+.xmv .onote { color: var(--mut); white-space: pre-wrap; margin: 0 0 4px; }
+.xmv .pic { max-width: 280px; max-height: 180px; display: block; margin: 4px 0; border-radius: 6px; }

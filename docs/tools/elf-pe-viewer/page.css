@@ -1,0 +1,11 @@
+/* ELF and PE Viewer (TOOLCHK, wave18) */
+[hidden] { display: none !important; }
+.bev h3 { font-size: 16px; margin: 14px 0 6px; }
+.bev #bgroups details { border: 1px solid var(--line); border-radius: 8px; padding: 4px 10px; margin: 6px 0; background: var(--panel); }
+.bev #bgroups summary { cursor: pointer; font-weight: 600; }
+.bev #btabs button[aria-pressed="true"] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+.bev #btabs button[aria-pressed="true"] .mut { color: inherit; }
+.bev #tq { font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); width: 320px; }
+.bev #btable thead th { cursor: pointer; }
+.bev td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.bev select { font: inherit; font-size: 14px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }

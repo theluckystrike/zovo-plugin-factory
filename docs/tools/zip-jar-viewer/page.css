@@ -1,0 +1,16 @@
+/* JAR Viewer (TOOLCHK, wave18) */
+[hidden] { display: none !important; }
+.jrv .jrgrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 16px; align-items: start; margin-top: 10px; }
+.jrv h3 { font-size: 15px; margin: 12px 0 6px; word-break: break-all; }
+.jrv #filter { width: 100%; font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); margin-bottom: 6px; }
+.jrv #ents td.mono { max-width: 380px; }
+.jrv #ents tr.on td { background: var(--sel); }
+.jrv #ents tr.dir td { color: var(--mut); }
+.jrv #ents tr.inner td:first-child { color: var(--mut); }
+.jrv #ents tr.badn td { color: var(--warn); }
+.jrv td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.jrv #epre { padding: 10px 12px; margin: 8px 0; font-size: 12.5px; white-space: pre; }
+.jrv #eimg { max-width: 100%; max-height: 360px; margin: 8px 0; }
+.jrv .vbar { display: inline-block; height: 9px; background: var(--acc); border-radius: 2px; }
+.jrv #etabs button[aria-pressed="true"] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+@media (max-width: 860px) { .jrv .jrgrid { grid-template-columns: 1fr; } }
