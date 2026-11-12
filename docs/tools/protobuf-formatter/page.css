@@ -1,0 +1,33 @@
+/* Protobuf Formatter (TOOLCHK4, wave18) */
+[hidden] { display: none !important; }
+.pbpaste { margin: 10px 0; }
+.pbpaste summary { cursor: pointer; color: var(--acc); }
+.pbpaste textarea { width: 100%; font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.pbv select { font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); max-width: 100%; }
+.pbv .docbar { flex-wrap: wrap; gap: 8px; align-items: center; }
+.pbv .tabb[aria-pressed="true"] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+.pbv .pbpane { margin-top: 8px; }
+.pbv .pbpre { margin: 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--code); font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; overflow: auto; max-height: 640px; }
+.pbv .pbpre .chg { background: var(--sel); display: inline-block; min-width: 100%; }
+.pbv .prob { display: flex; gap: 10px; align-items: baseline; padding: 6px 8px; border-bottom: 1px solid var(--line); font-size: 14px; }
+.pbv .prob .ln { color: var(--mut); font: 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: nowrap; min-width: 70px; }
+.pbv .prob .msg { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.pbv .prob .src { display: block; color: var(--mut); font: 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; margin-top: 2px; }
+.pbv .sev { font: 700 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding: 1px 6px; border-radius: 4px; border: 1px solid currentColor; text-transform: uppercase; white-space: nowrap; }
+.pbv .sev.error { color: #c62828; } .pbv .sev.warning { color: var(--warn); } .pbv .sev.info, .pbv .sev.hint { color: var(--mut); }
+:root[data-theme="dark"] .pbv .sev.error { color: #ff8a80; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pbv .sev.error { color: #ff8a80; } }
+.pbv .ok { color: var(--ok); padding: 8px; }
+.pbv .ol h3 { font-size: 15px; margin: 14px 0 6px; }
+.pbv .ol .blk { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; margin: 8px 0; }
+.pbv .ol .blk .blk { margin-left: 14px; }
+.pbv .ol .hd { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.pbv .ol .hd .kw { color: var(--acc); }
+.pbv .ol .hd .meta { font: 12px system-ui, sans-serif; color: var(--mut); margin-left: 8px; font-weight: 400; }
+.pbv .ol .cmt { color: var(--mut); font-size: 13px; margin: 2px 0 4px; white-space: pre-wrap; }
+.pbv .ol table { border-collapse: collapse; margin-top: 4px; font-size: 13px; }
+.pbv .ol td, .pbv .ol th { padding: 2px 10px 2px 0; text-align: left; vertical-align: top; }
+.pbv .ol th { color: var(--mut); font-weight: 400; }
+.pbv .ol td.num, .pbv .ol td.ty { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.pbv .ol td.num { text-align: right; }
+.pbv .ol ul { margin: 4px 0 0 18px; padding: 0; font-size: 14px; }
