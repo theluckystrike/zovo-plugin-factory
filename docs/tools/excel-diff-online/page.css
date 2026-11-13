@@ -1,0 +1,88 @@
+/* Excel Compare view (TOOLCHK5, wave18): the Excel Compare extension's media/main.css, every rule scoped under .xcapp and the VS Code theme colours mapped to the site colours. */
+[hidden] { display: none !important; }
+.xcapp { --chg: rgba(230, 170, 0, 0.28); --add: rgba(46, 160, 67, 0.26); --rem: rgba(248, 81, 73, 0.26); --mov: rgba(56, 139, 253, 0.22); }
+.xcapp { display: flex; flex-direction: column; height: 76vh; min-height: 460px; box-sizing: border-box; padding: 8px 0 4px; }
+.xcapp .loading { opacity: .8; }
+.xcapp .muted { opacity: .75; }
+.xcapp .top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.xcapp .files { display: flex; align-items: center; gap: 8px; min-width: 0; flex-wrap: wrap; }
+.xcapp .side { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; min-width: 0; }
+.xcapp .side .fname { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 36vw; }
+.xcapp .tag { display: inline-block; min-width: 18px; text-align: center; border-radius: 9px; font-size: 11px; padding: 0 5px; background: var(--acc); color: var(--acc-fg); }
+.xcapp .arrow { opacity: .6; }
+.xcapp .actions { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.xcapp .btn { font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 3px 9px; font-size: 13px; cursor: pointer; }
+.xcapp .btn:hover { background: rgba(128,128,128,.2); }
+.xcapp .btn.ghost { background: transparent; border-color: var(--line); padding: 1px 7px; }
+.xcapp .seg { display: inline-flex; }
+.xcapp .seg .seg-b { border-radius: 0; }
+.xcapp .seg .seg-b:first-child { border-radius: 3px 0 0 3px; }
+.xcapp .seg .seg-b:last-child { border-radius: 0 3px 3px 0; }
+.xcapp .seg .seg-b.on { background: var(--acc); color: var(--acc-fg); }
+.xcapp .pro { display: inline-flex; gap: 6px; margin-left: 6px; padding-left: 8px; border-left: 1px solid var(--line); }
+.xcapp .pos { min-width: 110px; text-align: center; }
+.xcapp .summary { margin: 2px 0 6px; }
+.xcapp .same-all { color: #3fb950; font-weight: 600; }
+.xcapp .keyed { margin-left: 8px; }
+.xcapp .tabs { display: flex; gap: 2px; overflow-x: auto; border-bottom: 1px solid var(--line); flex: none; }
+.xcapp .tab { font: inherit; color: var(--fg); background: transparent; border: none; border-bottom: 2px solid transparent; padding: 4px 10px; cursor: pointer; white-space: nowrap; opacity: .8; }
+.xcapp .tab.on { border-bottom-color: var(--acc); opacity: 1; }
+.xcapp .tab .count { margin-left: 6px; font-size: 11px; border-radius: 8px; padding: 0 6px; background: rgba(128,128,128,.2); }
+.xcapp .tab.diff .count { background: var(--chg); }
+.xcapp .tab.onlyA .count { background: var(--rem); }
+.xcapp .tab.onlyB .count { background: var(--add); }
+.xcapp .sheetinfo { display: flex; justify-content: space-between; gap: 12px; margin: 6px 0 4px; flex-wrap: wrap; }
+.xcapp .legend { display: inline-flex; align-items: center; gap: 4px; opacity: .85; }
+.xcapp .sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-left: 8px; }
+.xcapp .sw.changed { background: var(--chg); }
+.xcapp .sw.added { background: var(--add); }
+.xcapp .sw.removed { background: var(--rem); }
+.xcapp .sw.moved { background: var(--mov); }
+.xcapp .notice { margin: 2px 0 6px; padding: 4px 8px 4px 24px; border-left: 3px solid #cca700; background: rgba(128,128,128,.08); }
+.xcapp .detail { min-height: 22px; margin: 2px 0 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.xcapp .detail .old { text-decoration: line-through; color: #f85149; margin-right: 6px; }
+.xcapp .detail .new { color: #3fb950; margin-right: 6px; }
+.xcapp .grid { position: relative; flex: 1 1 auto; min-height: 120px; overflow: auto; border: 1px solid var(--line); outline: none; }
+.xcapp .ghead { position: sticky; top: 0; z-index: 3; height: 34px; background: var(--bg); border-bottom: 1px solid var(--line); }
+.xcapp .ghead .hc { position: absolute; top: 0; height: 34px; box-sizing: border-box; padding: 2px 6px; border-right: 1px solid var(--line); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.xcapp .ghead .hc b { display: block; font-size: 11px; opacity: .8; }
+.xcapp .ghead .hc .hh { display: block; overflow: hidden; text-overflow: ellipsis; }
+.xcapp .ghead .hc.added { background: var(--add); }
+.xcapp .ghead .hc.removed { background: var(--rem); }
+.xcapp .rn { position: sticky; left: 0; z-index: 2; display: flex; height: 100%; box-sizing: border-box; background: var(--bg); border-right: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.xcapp .rn span { flex: 1; text-align: right; padding: 0 6px; opacity: .7; line-height: 24px; }
+.xcapp .ghead .rn span { line-height: 34px; font-weight: 600; }
+.xcapp .gbody { position: relative; }
+.xcapp .tr { position: absolute; left: 0; height: 24px; border-bottom: 1px solid rgba(128,128,128,.12); box-sizing: border-box; }
+.xcapp .tr.added { background: var(--add); }
+.xcapp .tr.removed { background: var(--rem); }
+.xcapp .tr.moved { background: var(--mov); }
+.xcapp .tr.cur .rn { box-shadow: inset 3px 0 0 var(--acc); }
+.xcapp .tr.cur { outline: 1px solid var(--acc); outline-offset: -1px; }
+.xcapp .td { position: absolute; top: 0; height: 23px; line-height: 23px; box-sizing: border-box; padding: 0 6px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; border-right: 1px solid rgba(128,128,128,.12); cursor: default; }
+.xcapp .td.changed { background: var(--chg); }
+.xcapp .td.added { background: var(--add); }
+.xcapp .td.removed { background: var(--rem); }
+.xcapp .td.sel { outline: 2px solid var(--acc); outline-offset: -2px; }
+.xcapp .td .old { text-decoration: line-through; opacity: .7; margin-right: 6px; }
+.xcapp .td .new { font-weight: 600; }
+.xcapp .toast { position: fixed; right: 16px; bottom: 36px; padding: 6px 10px; background: #333; color: #fff; border: 1px solid var(--line); border-radius: 4px; }
+.xcapp h2 { font-size: 15px; margin: 8px 0; }
+.xcapp .errmsg { white-space: pre-wrap; }
+.xcapp .fwrap { flex: 1 1 auto; overflow: auto; border: 1px solid var(--line); }
+.xcapp .ftable { border-collapse: collapse; width: 100%; }
+.xcapp .ftable th, .xcapp .ftable td { text-align: left; padding: 3px 8px; border-bottom: 1px solid rgba(128,128,128,.15); }
+.xcapp .ftable th { position: sticky; top: 0; background: var(--bg); }
+.xcapp .ftable td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.xcapp .fr.different .st { color: #cca700; }
+.xcapp .fr.same .st { color: #3fb950; }
+.xcapp .fr.onlyA .st, .xcapp .fr.error .st { color: #f85149; }
+.xcapp .fr.onlyB .st { color: #3fb950; }
+.xcapp .zovo-support { flex: none; margin-top: 4px; }
+.xcpick { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin: 12px 0; }
+.xcpick .slot { display: inline-flex; gap: 6px; align-items: center; }
+.xcpick .slot .nm { font-weight: 600; max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.xcapp { line-height: 1.35; }
+.xcapp .ghead .hc { line-height: 14px; }
+.xcapp .ghead .hc b { line-height: 14px; }
+.xcapp .side { border: 0; background: transparent; padding: 0; }

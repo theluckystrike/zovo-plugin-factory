@@ -300,6 +300,7 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/elf-pe-viewer/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/eml-viewer/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/epub-reader/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/excel-diff-online/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/excel-viewer/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/font-viewer/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/gcode-viewer/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
@@ -324,6 +325,7 @@
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/parquet-viewer/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/pcap-viewer/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/pdf-dark-mode/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/pdf-to-markdown/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/plantuml-text-preview/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/pptx-viewer/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://theluckystrike.github.io/zovo-plugin-factory/tools/protobuf-formatter/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
