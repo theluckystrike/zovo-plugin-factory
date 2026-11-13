@@ -1,0 +1,14 @@
+/* HTML and CSS Formatter (TOOLCHK4, wave18) */
+[hidden] { display: none !important; }
+.hcfpaste { margin: 10px 0; }
+.hcfpaste summary { cursor: pointer; color: var(--acc); }
+.hcfpaste textarea { width: 100%; font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.hcfpaste select, .hcfv select, .hcfv input[type=number] { font: inherit; font-size: 14px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.hcfv input[type=number] { width: 64px; }
+.hcfv .docbar { flex-wrap: wrap; gap: 8px; align-items: center; }
+.hcfopts label { font-size: 14px; display: inline-flex; gap: 6px; align-items: center; }
+.hcfv.nothtml .hcf-html { display: none; }
+.hcfcols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 8px; }
+@media (max-width: 860px) { .hcfcols { grid-template-columns: 1fr; } }
+.hcfcols h3 { font-size: 14px; margin: 6px 0; }
+.hcfpre { margin: 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--code); font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; overflow: auto; max-height: 640px; tab-size: 4; }
