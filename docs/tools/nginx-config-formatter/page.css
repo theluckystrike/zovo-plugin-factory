@@ -1,0 +1,59 @@
+/* Nginx Config Formatter (TOOLCHK4, wave18) */
+[hidden] { display: none !important; }
+.ngpaste { margin: 10px 0; }
+.ngpaste summary { cursor: pointer; color: var(--acc); }
+.ngpaste textarea { width: 100%; font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.ngv select { font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); max-width: 100%; }
+.ngv .docbar { flex-wrap: wrap; gap: 8px; align-items: center; }
+.ngv .tabb[aria-pressed="true"] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+.ngv .ngpane { margin-top: 8px; }
+.ngv .ngpre { margin: 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--code); font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; overflow: auto; max-height: 640px; }
+.ngv .ngpre .chg { background: var(--sel); display: inline-block; min-width: 100%; }
+.ngv .prob { display: flex; gap: 10px; align-items: baseline; padding: 6px 8px; border-bottom: 1px solid var(--line); font-size: 14px; }
+.ngv .prob .ln { color: var(--mut); font: 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: nowrap; min-width: 70px; }
+.ngv .prob .msg { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.ngv .prob .src { display: block; color: var(--mut); font: 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; margin-top: 2px; }
+.ngv .sev { font: 700 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding: 1px 6px; border-radius: 4px; border: 1px solid currentColor; text-transform: uppercase; white-space: nowrap; }
+.ngv .sev.error { color: #c62828; } .ngv .sev.warning { color: var(--warn); } .ngv .sev.info, .ngv .sev.hint { color: var(--mut); }
+:root[data-theme="dark"] .ngv .sev.error { color: #ff8a80; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ngv .sev.error { color: #ff8a80; } }
+.ngv .ok { color: var(--ok); padding: 8px; }
+.ngv .ol h3 { font-size: 15px; margin: 14px 0 6px; }
+.ngv .ol .blk { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; margin: 8px 0; }
+.ngv .ol .blk .blk { margin-left: 14px; }
+.ngv .ol .hd { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.ngv .ol .hd .kw { color: var(--acc); }
+.ngv .ol .hd .meta { font: 12px system-ui, sans-serif; color: var(--mut); margin-left: 8px; font-weight: 400; }
+.ngv .ol .cmt { color: var(--mut); font-size: 13px; margin: 2px 0 4px; white-space: pre-wrap; }
+.ngv .ol table { border-collapse: collapse; margin-top: 4px; font-size: 13px; }
+.ngv .ol td, .ngv .ol th { padding: 2px 10px 2px 0; text-align: left; vertical-align: top; }
+.ngv .ol th { color: var(--mut); font-weight: 400; }
+.ngv .ol td.num, .ngv .ol td.ty { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.ngv .ol td.num { text-align: right; }
+.ngv .ol ul { margin: 4px 0 0 18px; padding: 0; font-size: 14px; }
+.ngv input[type=search] { font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); width: 240px; max-width: 100%; }
+.ngv .fix { color: var(--ok); font-size: 13px; display: block; margin-top: 2px; }
+.ngv .ov .srv { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; margin: 8px 0; }
+.ngv .ov .srv .hd { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.ngv .ov .srv .meta { color: var(--mut); font-size: 12px; margin-left: 8px; font-weight: 400; font-family: system-ui, sans-serif; }
+.ngv .ov table { border-collapse: collapse; margin-top: 4px; font-size: 13px; width: 100%; }
+.ngv .ov td, .ngv .ov th { padding: 3px 10px 3px 0; text-align: left; vertical-align: top; }
+.ngv .ov th { color: var(--mut); font-weight: 400; }
+.ngv .ov td.loc { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: nowrap; }
+.ngv .ov td.act { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow-wrap: anywhere; }
+.ngv .ov td.where { color: var(--mut); font-size: 12px; white-space: nowrap; }
+.ngv .ov h3 { font-size: 15px; margin: 14px 0 6px; }
+.nggrid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 12px; margin-top: 8px; }
+@media (max-width: 860px) { .nggrid { grid-template-columns: 1fr; } }
+.ngv .ngused { border: 1px solid var(--line); border-radius: 8px; max-height: 520px; overflow: auto; padding: 4px; }
+.ngv .ngused button { display: flex; justify-content: space-between; width: 100%; background: none; border: 0; border-radius: 4px; padding: 3px 8px; font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--fg); cursor: pointer; text-align: left; }
+.ngv .ngused button:hover, .ngv .ngused button:focus-visible { background: var(--panel); }
+.ngv .ngused button.on { background: var(--sel); }
+.ngv .ngused button .c { color: var(--mut); }
+.ngv .ngused button.unk { color: var(--warn); }
+.ngv .nginfo { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.ngv .nginfo h3 { margin: 0 0 6px; font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.ngv .nginfo pre { margin: 4px 0; padding: 6px 8px; background: var(--code); border-radius: 6px; font: 12.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; }
+.ngv .nginfo dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; margin: 6px 0; font-size: 14px; }
+.ngv .nginfo dt { color: var(--mut); }
+.ngv .nginfo dd { margin: 0; }
