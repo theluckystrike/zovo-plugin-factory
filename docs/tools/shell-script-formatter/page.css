@@ -1,0 +1,20 @@
+/* Shell Script Formatter (TOOLCHK5, wave18) */
+[hidden] { display: none !important; }
+.sfpaste { margin: 12px 0; }
+.sfpaste textarea { width: 100%; box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.sfv .docbar { flex-wrap: wrap; gap: 8px; align-items: center; }
+.sfv select { font: inherit; font-size: 14px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.sfv .tab[aria-pressed="true"] { background: var(--acc); color: var(--acc-fg); border-color: var(--acc); }
+.sfv .sfgap { flex: 1; }
+.sfv #flags code { font-size: 12.5px; }
+.sfcode { border: 1px solid var(--line); border-radius: 8px; overflow: auto; max-height: 640px; background: var(--code); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; tab-size: 8; }
+.sfcode .ln { display: flex; white-space: pre; min-height: 1.4em; }
+.sfcode .ln .n { flex: 0 0 auto; min-width: 44px; padding: 0 8px; text-align: right; color: var(--mut); user-select: none; border-right: 1px solid var(--line); }
+.sfcode .ln .c { padding: 0 8px; }
+.sfcode .ln.bad { background: rgba(198, 40, 40, .16); }
+.sfcode .ln.del { background: rgba(198, 40, 40, .12); }
+.sfcode .ln.add { background: rgba(46, 125, 50, .14); }
+.sfcode .ln.hunk { color: var(--mut); background: var(--panel); }
+.sfcode .ln .m { flex: 0 0 auto; width: 16px; text-align: center; color: var(--mut); user-select: none; }
+.sferr { border-color: var(--warn); }
+.sferr h3 { margin: 0 0 6px; font-size: 15px; }

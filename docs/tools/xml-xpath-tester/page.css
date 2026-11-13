@@ -1,0 +1,24 @@
+/* XPath Tester and XML Formatter (TOOLCHK5, wave18) */
+[hidden] { display: none !important; }
+#pasteBox textarea { width: 100%; box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 8px; }
+.xpv input[type=text], .xpv select { font: inherit; font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.xpv #expr { flex: 1; min-width: 220px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.xpv .docbar { flex-wrap: wrap; gap: 8px; align-items: center; }
+.xpv .xpval code { font-size: 15px; }
+.xpv .dtab td:last-child { max-width: 560px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.xpv .dtab tr[tabindex] { cursor: pointer; }
+.xpv .xpgrid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 14px; margin-top: 8px; }
+@media (max-width: 860px) { .xpv .xpgrid { grid-template-columns: 1fr; } }
+.xpv .xptree { border: 1px solid var(--line); border-radius: 8px; max-height: 520px; overflow: auto; padding: 6px 4px; font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.xpv .xptree details { margin-left: 14px; }
+.xpv .xptree > details { margin-left: 2px; }
+.xpv .xptree summary { cursor: pointer; padding: 1px 4px; border-radius: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.xpv .xptree summary:hover, .xpv .xptree .leaf:hover { background: var(--panel); }
+.xpv .xptree .leaf { display: block; width: calc(100% - 18px); margin-left: 18px; text-align: left; background: none; border: 0; padding: 1px 4px; font: inherit; color: var(--fg); cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-radius: 4px; }
+.xpv .tn { color: var(--acc); font-weight: 600; }
+.xpv .ka { color: var(--ok); }
+.xpv .pv, .xpv .ln, .xpv .cnt { color: var(--mut); }
+.xpv .xppaths .xprow { border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; margin-bottom: 8px; }
+.xpv .xppaths code { display: block; word-break: break-all; margin: 4px 0; font-size: 12.5px; }
+.xpv .xppaths .btn { margin-right: 6px; }
+.xpv .xpout { max-height: 520px; overflow: auto; background: var(--code); border: 1px solid var(--line); border-radius: 8px; padding: 10px; font-size: 12.5px; white-space: pre; }

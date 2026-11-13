@@ -1,0 +1,18 @@
+/* Image Metadata Viewer (TOOLCHK5, wave18) */
+[hidden] { display: none !important; }
+.imv .docbar { flex-wrap: wrap; gap: 8px; align-items: center; }
+.imgrid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 16px; margin: 12px 0; align-items: start; }
+@media (max-width: 760px) { .imgrid { grid-template-columns: 1fr; } }
+.imprev { margin: 0; border: 1px solid var(--line); border-radius: 8px; padding: 8px; background: var(--panel); text-align: center; }
+.imprev img { max-width: 100%; max-height: 420px; height: auto; display: block; margin: 0 auto; image-orientation: from-image; }
+.imv .kv { width: 100%; }
+.imv .kv td:first-child, .imv .kv th { white-space: nowrap; vertical-align: top; color: var(--mut); padding-right: 12px; }
+.imv .kv td { word-break: break-word; }
+.imv h3 { margin: 18px 0 6px; font-size: 16px; }
+.imv .dtab td { word-break: break-word; }
+.imv #list tbody tr { cursor: pointer; }
+.imv #list tbody tr.on { background: var(--sel); }
+.imxmp { max-height: 360px; overflow: auto; background: var(--code); border: 1px solid var(--line); border-radius: 8px; padding: 8px; font-size: 12px; white-space: pre-wrap; word-break: break-all; }
+.imv .gpsno { color: var(--mut); }
+.imv #facts { width: auto; }
+#moreSamples button { padding: 2px 10px; }
