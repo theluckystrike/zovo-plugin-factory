@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-gcode-viewer-572c2d4d3568';
+const CACHE = 'zovo-gcode-viewer-661ed7dbba4a';
 const FILES = ["./", "tool.css", "app.js", "page.css", "htool.js", "sample.js"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-gcode-viewer-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

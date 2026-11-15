@@ -2,7 +2,7 @@
    Own files: network first, so a new version shows at once; the cache answers when offline.
    The pinned library files never change at their versioned URL, so they come from the cache first.
    Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-font-viewer-1c4906e12a34';
+const CACHE = 'zovo-font-viewer-cc3d156bcfb0';
 const FILES = ["./", "tool.css", "app.js", "fontcore.js", "page.css", "htool.js", "sample.js"];
 const CDN = ["https://cdn.jsdelivr.net/npm/fflate@0.8.2/esm/browser.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/brotli.bitreader.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/brotli.blocks.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/brotli.context.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/brotli.contextmap.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/brotli.dictionary.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/brotli.huffman.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/brotli.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/brotli.prefix.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/brotli.streams.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/brotli.transform.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/gzip.huffman.js", "https://cdn.jsdelivr.net/npm/hyparquet-compressors@1.1.3/src/gzip.js", "https://cdn.jsdelivr.net/npm/opentype.js@1.3.4/dist/opentype.module.min.js"];
 self.addEventListener('install', e => {

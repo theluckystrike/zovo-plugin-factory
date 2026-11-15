@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-can-dbc-viewer-0a14150bde36';
+const CACHE = 'zovo-can-dbc-viewer-263bcde90bf9';
 const FILES = ["./", "tool.css", "common.js", "app.js", "sample.js", "tc2.css"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-can-dbc-viewer-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

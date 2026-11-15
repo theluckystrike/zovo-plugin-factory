@@ -2,7 +2,7 @@
    Own files: network first, so a new version shows at once; the cache answers when offline.
    The pinned library files never change at their versioned URL, so they come from the cache first.
    Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-openapi-viewer-85c46b4dbcff';
+const CACHE = 'zovo-openapi-viewer-da592300112b';
 const FILES = ["./", "tool.css", "common.js", "app.js", "sample.js", "tc2.css"];
 const CDN = ["https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.mjs"];
 self.addEventListener('install', e => {

@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-sql-formatter-87b3745f1bc8';
+const CACHE = 'zovo-sql-formatter-dc05ce63c418';
 const FILES = ["./", "tool.css", "app.js", "sample.js", "page.css", "worker.js"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-sql-formatter-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

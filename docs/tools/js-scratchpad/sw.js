@@ -2,7 +2,7 @@
    Own files: network first, so a new version shows at once; the cache answers when offline.
    The pinned library files never change at their versioned URL, so they come from the cache first.
    Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-js-scratchpad-805fcd3b81a1';
+const CACHE = 'zovo-js-scratchpad-5b2036f8ce19';
 const FILES = ["./", "tool.css", "app.js", "core.js", "sample.js", "page.css"];
 const CDN = ["https://cdn.jsdelivr.net/npm/@sveltejs/acorn-typescript@1.0.13/index.js", "https://cdn.jsdelivr.net/npm/acorn@8.15.0/dist/acorn.mjs"];
 self.addEventListener('install', e => {

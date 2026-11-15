@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-pdf-to-markdown-4162eaedd137';
+const CACHE = 'zovo-pdf-to-markdown-240b225558c7';
 const FILES = ["./", "tool.css", "app.js", "engine.js", "page.css", "htool.js", "pdfjs/pdf.min.mjs", "pdfjs/pdf.worker.min.mjs", "sample.js"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-pdf-to-markdown-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

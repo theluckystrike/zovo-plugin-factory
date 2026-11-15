@@ -2,7 +2,7 @@
    Own files: network first, so a new version shows at once; the cache answers when offline.
    The pinned library files never change at their versioned URL, so they come from the cache first.
    Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-text-diff-e30c78be46ec';
+const CACHE = 'zovo-text-diff-dba55057b0d8';
 const FILES = ["./", "tool.css", "app.js", "sample.js", "page.css"];
 const CDN = ["https://cdn.jsdelivr.net/npm/diff@8.0.4/libesm/diff/array.js", "https://cdn.jsdelivr.net/npm/diff@8.0.4/libesm/diff/base.js", "https://cdn.jsdelivr.net/npm/diff@8.0.4/libesm/diff/character.js", "https://cdn.jsdelivr.net/npm/diff@8.0.4/libesm/diff/word.js", "https://cdn.jsdelivr.net/npm/diff@8.0.4/libesm/util/string.js"];
 self.addEventListener('install', e => {

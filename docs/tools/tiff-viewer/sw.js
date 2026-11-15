@@ -2,7 +2,7 @@
    Own files: network first, so a new version shows at once; the cache answers when offline.
    The pinned library files never change at their versioned URL, so they come from the cache first.
    Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-tiff-viewer-4e793d0b7f2e';
+const CACHE = 'zovo-tiff-viewer-429dd3eb1877';
 const FILES = ["./", "tool.css", "app.js", "worker.js", "sample.js"];
 const CDN = ["https://cdn.jsdelivr.net/npm/geotiff@3.0.5/dist-browser/geotiff.js"];
 self.addEventListener('install', e => {

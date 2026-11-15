@@ -1,6 +1,6 @@
 /* Offline copy of this tool. Network first, so a new version shows at once; the cache answers when offline.
    Only this tool's own files are cached. Files the user opens are never fetched or stored. */
-const CACHE = 'zovo-pcap-viewer-c198c831815b';
+const CACHE = 'zovo-pcap-viewer-8ad0354fad67';
 const FILES = ["./", "tool.css", "app.js", "engine.js", "page.css", "htool.js", "sample.js"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('zovo-pcap-viewer-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
