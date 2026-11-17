@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Owner steps that gate money</title>
+<style>
+body{font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;color:#1b1f2a;background:#fff}
+main{max-width:980px;margin:0 auto;padding:18px 20px 40px}
+nav{background:#1b1f2a;padding:10px 20px}nav a{color:#fff;margin-right:16px;text-decoration:none;font-size:14px}
+h1{font-size:26px;margin:10px 0 6px}h2{font-size:20px;margin:34px 0 8px;border-top:2px solid #2456c8;padding-top:12px}
+table{border-collapse:collapse;width:100%;margin:10px 0 20px}th,td{border-bottom:1px solid #ccd;padding:6px 8px;text-align:left;vertical-align:top;font-size:14px}
+th{background:#eef2fa}.tw{overflow-x:auto}
+pre{background:#fff8d6;border:1px solid #e3d48a;padding:10px;white-space:pre-wrap;word-break:break-word;font:13px/1.5 ui-monospace,Menlo,monospace;user-select:all;-webkit-user-select:all}
+code{font:13px ui-monospace,Menlo,monospace;background:#f1f1f4;padding:1px 4px}
+.mut{color:#555;font-size:14px}.box{border:1px solid #ccd;border-radius:6px;padding:10px 14px;margin:12px 0;background:#f8f9fc}
+ol li,ul li{margin:6px 0}
+</style>
+</head>
+<body>
+<nav><a href="index.html">Overview</a><a href="next24.html">Next 24h</a><a href="owner.html">Owner steps</a><a href="kpi.html">Conversion KPIs</a></nav>
+<main>
+<h1>Owner steps that gate money or capacity</h1>
+<p>Only you can do these steps. They are in order of expected USD in the next 30 days, biggest first. Steps that give capacity, not direct USD, come after the steps with a USD figure. Each step has the clicks or the command, the time, the file with the ready text and the expected effect with its source.</p>
+<p class="mut">Made 17 Nov 2026, 11:20 (UTC+7) by lane OWNER2 for sprint v6. Marks: F means fetched (source and time). E means estimate (method named). Stripe was read through the API with the read-only key at 11:14. No live Stripe link was opened. Nothing was changed in Stripe. Click a yellow box once to select all of its text.</p>
+
+<h2 id="list">The list</h2>
+<div class="tw"><table>
+<tr><th>#</th><th>Step</th><th>Time</th><th>Expected effect in 30 days</th><th>Later</th><th>Source</th></tr>
+<tr><td>1</td><td><a href="#stripe">Stripe links: quantity off on the USD 19 link, new text near Pay on both links</a></td><td>10 min</td><td>USD 26 to 73 (E)</td><td>Same rate each month</td><td>PAY4 rank 1 and 2</td></tr>
+<tr><td>2</td><td><a href="#refund">Say yes or no to the 14-day refund line</a></td><td>1 min</td><td>If yes, USD 18 to 46 more (E)</td><td>Same rate each month</td><td>PAY4 rank 3</td></tr>
+<tr><td>3</td><td><a href="#disk">Disk: two answers for the agents</a></td><td>5 min</td><td>No direct USD. Builds can run again, so Hex 0.3.15 can ship.</td><td>All builds</td><td>plan24 v6, coldstore status F 11:14</td></tr>
+<tr><td>4</td><td><a href="#seats">Seat logins: Max, zovo-team2, zovo-team3</a></td><td>6 min</td><td>No direct USD. 3 more agent seats.</td><td>Team plans end 20 Nov 08:38 UTC</td><td>plan24 accounts, auth status F 11:15</td></tr>
+<tr><td>5</td><td><a href="#hex">Post the Hex drafts by hand</a></td><td>20 min</td><td>No USD figure. More people reach Hex, the one listing that sends buyers.</td><td>-</td><td>HEX1, plan24 facts</td></tr>
+<tr><td>6</td><td><a href="#shopify">Shopify Partner account and dev store</a></td><td>45 min</td><td>USD 0 (review and payout delays)</td><td>USD 60 to 380 a month at 90 days (E)</td><td>SHOP2, SYN2</td></tr>
+<tr><td>7</td><td><a href="#atlassian">Atlassian identity check ECOHELP-182590, by 6 Dec</a></td><td>about 10 min (E)</td><td>USD 0</td><td>Without it, paid Atlassian apps cannot pay out</td><td>GATE7</td></tr>
+<tr><td>8</td><td><a href="#jetbrains">JetBrains Trader details and bank form</a></td><td>40 min, 2 sittings</td><td>USD 0</td><td>USD 25 to 170 a month after 6 months (E)</td><td>JB2, JB3, SYN2</td></tr>
+</table></div>
+<p>Do steps 1 and 2 first. They take 11 minutes together. All 10 real buyers since 10 Nov stopped on the Stripe page, before Pay (F, PAY4, Stripe API 17 Nov 00:37).</p>
+
+<h2 id="stripe">1. Stripe links (10 minutes)</h2>
+<p>State now (F, Stripe API, 17 Nov 11:14). The USD 19 link (id ends in PrV9) still has the quantity picker on, 1 to 100. Both links still have the old text near Pay. This text does not say who BeLikeNative is. It does not say "once". This step has been open since 15 Nov.</p>
+<p>Do not open the buy.stripe.com links to check them. Each visit makes a checkout and spoils the numbers. Edit the links only in the Dashboard.</p>
+<ol>
+<li>Open the Stripe Dashboard. Use the BeLikeNative account. Keep the account name as it is.</li>
+<li>Open Payment Links. You find it in the left menu, or type "Payment Links" in the Dashboard search.</li>
+<li>Click the link "Zovo Pro" for US$19.00. Its id ends in PrV9.</li>
+<li>Click Edit.</li>
+<li>In the product row, turn off "Let customers adjust quantity".</li>
+<li>Find the custom text for the Pay button. Its name is "Payment submission", under Options or Advanced options.</li>
+<li>Delete the old text. Paste the US$19 text below.</li>
+<li>Click Update link. The URL stays the same, so every installed extension keeps working.</li>
+<li>Open the link "Zovo Pro Team" for US$59.00. Its id ends in cruS. Click Edit.</li>
+<li>Do not change the quantity. It is already off on this link.</li>
+<li>Replace the custom text with the US$59 text below. Click Update link.</li>
+<li>Tell the agents "Stripe done". An agent reads both links again through the API, read-only.</li>
+</ol>
+<p>Text for the US$19 link (file out/STRIPECOPY/pro.txt):</p>
+<pre>BeLikeNative is the company that makes Zovo, which is why its name is on this page and on your receipt. Your card statement will say ZOVO PRO. You pay US$19 once. There's no subscription and no account. Your license key shows on the next page right after you pay. Paste it into VS Code with the command "Zovo Pro: Enter a key" and every Pro tool turns on. It works offline, and the same key works in Cursor and Windsurf.</pre>
+<p>Text for the US$59 Team link (file out/STRIPECOPY/team.txt):</p>
+<pre>BeLikeNative is the company that makes Zovo, which is why its name is on this page and on your receipt. Your card statement will say ZOVO PRO. You pay US$59 once for 5 people. There's no subscription. Nobody needs an account. One team key shows on the next page right after you pay. Each person pastes it into VS Code with the command "Zovo Pro: Enter a key" and every Pro tool turns on. It works offline, and the same key works in Cursor and Windsurf.</pre>
+<p>Do not change these. The price, the product, the "After payment" redirect to license.zovo.one/claim, the payment methods, the account name, the logo, the statement descriptor, payouts, legal and identity fields, API keys and webhooks. Do not touch any other link in this Stripe account.</p>
+<div class="box">
+<p>Ready files. out/STRIPECOPY/pro.txt and team.txt hold the text. out/STRIPEBRAND.html shows the card page now and after the 2 changes (mockup, no live link opened). out/OWNERPACK.html (14 Nov) has the older 4-option plan; STRIPEBRAND (16 Nov) replaces its step 0 with "keep BeLikeNative, explain it near Pay".</p>
+<p>Expected effect. Plus 3 to 8 points from checkout to paid for the text, plus 0 to 2 points for the quantity change (E, PAY4: copy grade 64 to 95 of 100, the cut-off description, 0 of 9 Pro buyers changed the quantity). At about 1.6 real checkouts a day (F, PAY4: 10 in 6.4 days), that is USD 6 to 17 a week, or USD 26 to 73 in 30 days (E).</p>
+</div>
+
+<h2 id="refund">2. The 14-day refund line (1 minute)</h2>
+<p>Decide yes or no. Today no page promises a refund. The buy page has no refund line, and REFUND_LINE is empty (F, PAY4, 17 Nov 00:40).</p>
+<ol>
+<li>If you say yes, add this sentence to the end of the text near Pay on both Stripe links (step 1, before you click Update link).</li>
+<li>If you say yes, write "yes 14" in the file below. The agents then set the same line on the buy page and in the VS Code panel.</li>
+<li>If you say no, write "no" in the same file. Nothing else changes.</li>
+</ol>
+<p>The sentence (file out/STRIPECOPY/refund-line.txt):</p>
+<pre>If it doesn't fit your work, write to us within 14 days and you get a full refund.</pre>
+<p>The command for your answer (change yes 14 to no if you say no):</p>
+<pre>echo "yes 14" &gt; ~/plugin-market-intel-work/run-20261107/wave18/out/OWNER-refund.txt</pre>
+<div class="box"><p>Expected effect, if yes. Plus 2 to 5 points from checkout to paid (E, PAY4 rank 3, WHY1 weight 0.35; rival tools show a 14-day refund). At about 48 real checkouts in 30 days, that is 1 to 2.4 more sales, USD 18 to 46 (E). The cost is the refunds you pay back. The copy grade of the Stripe text goes from 4.75 to 5 of 5 (STRIPEBRAND).</p></div>
+
+<h2 id="disk">3. Disk (5 minutes)</h2>
+<p>State now (F, df, 17 Nov 11:14). 17 GB free. Builds and verifiers stop below 20 GB. The coldstore 7-day plan has 0 items (F, 11:13). Lane DISK2 works on this from 12:00 and writes out/DISK2.md by 14:00. Read the top of that file first. It names the folder that holds the space and the owner step, if one is needed.</p>
+<p>Answer A. May coldstore release the items it already copied?</p>
+<p>Fact to know first (F, coldstore list, 11:14). The "75 GiB copied" is the size on the remote. 28 of the 37 copied items are old copies of one file, opencode.db, which is only 40 MB on disk today. The other items are about 1.4 GB on disk. So a release gives at most about 1.4 GB, not 75 GB. Agents do not delete data to continue, so this needs your yes.</p>
+<pre>echo "coldstore release yes" &gt; ~/plugin-market-intel-work/run-20261107/wave18/out/OWNER-disk.txt</pre>
+<p>Answer B. Turn off the automatic macOS update check, if DISK2 says the update holds the space. Type this in Terminal. It asks for your Mac password.</p>
+<pre>sudo softwareupdate --schedule off</pre>
+<p class="mut">F at 11:14. Automatic download is already off (AutomaticDownload 0). Automatic check is on. /Library/Updates holds 245 MB. So this command alone frees little. Remove a staged update folder only if DISK2.md names it.</p>
+<div class="box"><p>Expected effect. No direct USD. At 20 GB free the builds start again. The first build is Hex 0.3.15. Hex has 28% of installs and is the one listing that sends buyers (F, plan24 v6 facts, 17 Nov 10:13).</p></div>
+
+<h2 id="seats">4. Seat logins (6 minutes)</h2>
+<p>State now (F, claude auth status, 17 Nov 11:15). The default Claude login (the Max plan, command claude) is logged out. zovo-team2 and zovo-team3 are logged out. All Team plans end 20 Nov 08:38 UTC (15:38 UTC+7).</p>
+<ol>
+<li>Open Terminal.</li>
+<li>Type the first command below. A browser opens. Sign in with the Max account.</li>
+<li>Type the second command. Sign in with the zovo-team2 account.</li>
+<li>Type the third command. Sign in with the zovo-team3 account.</li>
+<li>Type the last command. Each line must show "loggedIn": true.</li>
+</ol>
+<pre>env -u CLAUDE_CONFIG_DIR claude auth login</pre>
+<pre>CLAUDE_CONFIG_DIR=~/.claude-zovo-team2 claude auth login</pre>
+<pre>CLAUDE_CONFIG_DIR=~/.claude-zovo-team3 claude auth login</pre>
+<pre>for d in ~/.claude ~/.claude-zovo-team2 ~/.claude-zovo-team3; do echo $d; CLAUDE_CONFIG_DIR=$d claude auth status | grep loggedIn; done</pre>
+<p>Then decide what runs after 20 Nov 08:38 UTC. The Team seat renewals are cancelled. Tell the agents "renew" or "stop at 20 Nov".</p>
+<div class="box"><p>Expected effect. No direct USD. Each login adds one agent seat until the plan ends. Today zovo-team5 and zovo-team carry all build and verifier lanes (F, plan24 v6 accounts).</p></div>
+
+<h2 id="hex">5. Post the Hex drafts by hand (20 minutes)</h2>
+<p>The drafts are in out/HEX1-drafts.md. One draft is a Show HN post. The other is a post for r/ReverseEngineering. Agents never post.</p>
+<ol>
+<li>Open out/HEX1-drafts.md.</li>
+<li>Read the fact table at the end. The drafts were checked on 12 Nov. Hex is now at 0.3.14, so check each claim again.</li>
+<li>For Reddit, read the current sidebar rules of the subreddit first.</li>
+<li>Post from your own accounts.</li>
+</ol>
+<div class="box"><p>Expected effect. No USD figure exists. The posts link to the free Hex web tool, and the tool links to the extension. Hex has 1,246 installs, plus 175 in 24 hours (F, plan24 v6 facts).</p></div>
+
+<h2 id="shopify">6. Shopify Partner account and dev store (45 minutes)</h2>
+<p>Three Shopify apps are built and tested. None is on Shopify, because only you can make the Partner account. Agents deploy after your step 3.</p>
+<ol>
+<li>Open the Shopify Partners site. Click Join now.</li>
+<li>Sign up with the business email that you want on the listings. Accept the Partner Program Agreement.</li>
+<li>In the Partner Dashboard, open Settings. Fill in the business name and the contacts.</li>
+<li>Make a development store. The test products, customer tags and payment methods are in the file below.</li>
+<li>In Terminal, link each app with the Shopify CLI. Use the commands in the file below. Name each app as the file says.</li>
+<li>Tell the agents "Shopify apps are linked".</li>
+</ol>
+<p class="mut">Ready files: ~/Desktop/Zovo plugin factory/04 Owner steps/shopify.md (the steps) and ~/plugin-market-intel-work/factory/shopify-launch/LAUNCH-KIT.md (every listing field). Lane EXPAND2 writes out/EXPAND2.md by 20:00 today with what is submit-ready.</p>
+<div class="box"><p>Expected effect. USD 0 in 30 days (review and payout delays, SYN2). USD 60 to 380 a month at 90 days for the 3 apps (E, SHOP2). Shopify takes 0% of the first USD 1M. The App Store fee is USD 19 once.</p></div>
+
+<h2 id="atlassian">7. Atlassian identity check ECOHELP-182590 (about 10 minutes, by 6 Dec)</h2>
+<p>The ticket is "Pending Individual Verification" (F, GATE7). Agents must not do identity steps.</p>
+<ol>
+<li>Open the Atlassian support portal for Marketplace partners.</li>
+<li>Open ticket ECOHELP-182590.</li>
+<li>Click the Stripe Identity link in the ticket.</li>
+<li>Complete the check for the Primary Partner Contact.</li>
+</ol>
+<div class="box"><p>Expected effect. USD 0 in 30 days. 15 app tickets wait for Atlassian review (F, GATE7). Without this check, paid Atlassian apps cannot pay out after review. The deadline is 6 Dec 2026.</p></div>
+
+<h2 id="jetbrains">8. JetBrains Trader details and bank form (40 minutes, 2 sittings)</h2>
+<p>Hex Viewer, DOCX &amp; PPTX Viewer and NetCDF, HDF5 &amp; NumPy Viewer 1.0.0 are built and staged with a free viewer and a Pro tier. Nothing is uploaded (F, JB3).</p>
+<ol>
+<li>Open plugins.jetbrains.com and sign in.</li>
+<li>Click your profile picture. Click Vendors, then zovo, then Edit.</li>
+<li>Open the Trader Details tab. Fill in the trader and bank fields. The file below lists each field.</li>
+<li>Under Vendor Information, set the payout currency to USD.</li>
+<li>Send the tax question in the file below to JetBrains.</li>
+<li>Read EULA-PRO.md one time. The file below gives its path.</li>
+<li>Make the marker file with the command below. The upload script does not run without it.</li>
+<li>After the agents upload 1.0.0, fill in the Sales Info form for each plugin (5 minutes each, values in SALES-FORM.md).</li>
+</ol>
+<pre>touch ~/plugin-market-intel-work/factory/jetbrains-paid-ready.txt</pre>
+<p class="mut">Ready files: ~/Desktop/Zovo plugin factory/04 Owner steps/jetbrains-paid.md (each field and the tax question) and run-20261107/wave14/out/JB3-dist (zips, SHA256.txt, SALES-FORM.md). Lane EXPAND2 checks today if these builds are still current.</p>
+<div class="box"><p>Expected effect. USD 0 in 30 days (no plugin approved yet, payout from USD 200, SYN2 and INTEL10). USD 25 to 170 a month after 6 months (E, JB2). JetBrains keeps 15%.</p></div>
+
+<h2 id="rules">What stays the same</h2>
+<ul>
+<li>Zovo Pro stays USD 19 once. Team stays USD 59 once. Agents add no new tier.</li>
+<li>Free stays free. No extension shows a popup or a nag on open. The Pro panel opens only after a click.</li>
+<li>Agents do not open live Stripe links. They read Stripe only with the read-only key.</li>
+</ul>
+<p class="mut">Sources are in ~/plugin-market-intel-work/run-20261107/wave18/out: PAY4.md, STRIPEBRAND.html, OWNERPACK.html, STRIPECOPY/, HEX1-drafts.md, DISKOPS.md, and DISK2.md and EXPAND2.md when they are written. Older sources: wave14/out/JB3.md and SYN2.md, wave15/out/GATE7.md and INTEL10.md.</p>
+</main>
+</body>
+</html>
