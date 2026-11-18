@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AskSpace, Q&amp;A getting started</title><style>body{font:16px/1.6 system-ui,sans-serif;max-width:860px;margin:0 auto;padding:24px 16px;background:#fff;color:#17191d}a{color:#2456c8}code{background:#f0f2f5;padding:1px 4px;border-radius:4px;font-size:.92em}pre{background:#f0f2f5;padding:12px;overflow-x:auto;border-radius:6px}.tw{overflow-x:auto}table{border-collapse:collapse;margin:10px 0}th,td{border:1px solid #e0e3e7;padding:6px 8px;text-align:left;vertical-align:top}nav a{margin-right:14px}header{display:flex;gap:14px;align-items:center}header img{width:56px;height:56px;border-radius:12px}@media(prefers-color-scheme:dark){body{background:#121417;color:#e8eaed}a{color:#7da2ff}code,pre{background:#1f242b}th,td{border-color:#2a2f36}}
+.support{margin:30px 0 10px;padding:16px 18px;border:1px solid var(--line,#e0e3e7);border-radius:10px;background:var(--card,#f6f7f9)}
+.support h2{margin:0 0 6px;font-size:21px}.support p{margin:6px 0}.support .row{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin:12px 0 4px}
+.support .btn-sponsor{display:inline-flex;align-items:center;min-height:48px;box-sizing:border-box;padding:0 20px;border-radius:8px;font-weight:600;text-decoration:none;background:var(--acc,#2456c8);color:#fff;border:1px solid var(--acc,#2456c8)}
+.support .alt{display:inline-flex;align-items:center;min-height:48px}
+.support h3{margin:18px 0 4px;font-size:17px}.support ul{margin:6px 0 0;padding-left:20px}.support li{margin:6px 0}
+@media(prefers-color-scheme:dark){.support{border-color:var(--line,#2a2f36);background:var(--card,#1a1e23)}.support .btn-sponsor{background:var(--acc,#7da2ff);border-color:var(--acc,#7da2ff);color:#0b0d10}}
+</style></head><body><header><img src="logo.png" alt=""><h1>AskSpace, Q&amp;A</h1></header><nav><a href="index.html">Documentation</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="../../index.html">All products</a><a href="../../vscode/index.html">VS Code extensions</a><a href="../../apify/index.html">Apify Actors</a></nav><h2>Getting started</h2>
+<p>This guide is for first-time users and Confluence administrators. It describes AskSpace version 2, the version on the Atlassian Marketplace now.</p>
+
+<h3>Free and paid</h3>
+<p>AskSpace is a paid app. The license is free for sites with up to 10 users. Larger sites can start a free trial from the Marketplace. Prices are on the Pricing tab of the Marketplace listing.</p>
+<div class="tw"><table><tr><th>What you can do</th><th>Active license or free trial</th><th>No active license</th></tr>
+<tr><td>Read questions, answers and comments (AskSpace home, space Q&amp;A, page questions, macro)</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Delete posts (by the rules in step 3)</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Ask, answer, comment, vote, accept, edit</td><td>Yes (paid)</td><td>No</td></tr>
+<tr><td>Ask about this page (page-level Q&amp;A in the byline)</td><td>Yes (paid)</td><td>Read only</td></tr>
+<tr><td>AskSpace questions macro</td><td>Yes (paid)</td><td>Read only</td></tr></table></div>
+<p>Without an active license, AskSpace shows this message when you try to change something: "The AskSpace license for this site is not active, so AskSpace is read-only. Ask a Confluence administrator to renew it."</p>
+
+<h3>1. Installation and access</h3>
+<ol>
+<li>Make sure that you use Confluence Cloud. AskSpace does not run on Confluence Data Center.</li>
+<li>Make sure that you are a site administrator or a Confluence administrator. Only an administrator can install apps.</li>
+<li>In Confluence, open <b>Apps</b> and then <b>Explore more apps</b>. Search for "AskSpace".</li>
+<li>Click <b>Try it free</b> (or <b>Get it now</b>) and follow the steps.</li>
+<li>Read the permissions and accept them. AskSpace asks for 4 read-only scopes: <code>read:space:confluence</code>, <code>read:page:confluence</code>, <code>read:blogpost:confluence</code> and <code>read:confluence-user</code>. AskSpace uses them only to check who can see a space, page or blog post, and who is an administrator.</li>
+<li>Users need no extra Confluence permission or group. Every logged-in user can use AskSpace. Anonymous visitors cannot use it.</li>
+<li>Find AskSpace in these places:
+<ul>
+<li><b>AskSpace home</b>: open <b>Apps</b> in the Confluence sidebar or top bar, then click <b>AskSpace</b>. This page shows all questions that you can see.</li>
+<li><b>Space Q&amp;A</b>: in a space sidebar, open <b>Space apps</b> and click <b>Q&amp;A</b>.</li>
+<li><b>Ask about this page</b> (paid): on a page or blog post, click <b>Ask about this page</b> in the byline under the title.</li>
+<li><b>AskSpace questions macro</b> (paid): insert it in the page editor. See step 5.</li>
+</ul></li>
+</ol>
+
+<h3>2. Ask a question</h3>
+<ol>
+<li>For a site-wide question, open the AskSpace home. For a question about one space, open the <b>Q&amp;A</b> page of that space.</li>
+<li>Click <b>Ask a question</b>.</li>
+<li>Read the blue line at the top of the form. It tells you who will see the question. On the AskSpace home it says "Everyone who can use AskSpace on this site will see this question." In a space, only people who can view the space see the question.</li>
+<li>Type the question in <b>Question</b> (8 to 150 characters).</li>
+<li>Optional: type more information in <b>Details</b> (up to 10,000 characters).</li>
+<li>Optional: type up to 5 <b>Topics</b>, separated by commas. Topics help people find the question and filter the macro.</li>
+<li>Click <b>Post question</b>.</li>
+</ol>
+<p><img src="shot-3.png" alt="The Ask a question form with the visibility line, Question, Details and Topics fields, and the Post question button" style="max-width:100%;border:1px solid #e0e3e7;border-radius:6px"></p>
+
+<h3>3. Answer, comment, vote, accept, edit and delete</h3>
+<ol>
+<li>Click a question in a list to open it.</li>
+<li>To answer, type in <b>Your answer</b> and click <b>Post answer</b>. Anyone who can see the question can answer it.</li>
+<li>To comment on a question or an answer, click <b>Add a comment</b>, type the comment and click <b>Comment</b>. A post can have up to 50 comments.</li>
+<li>To vote, click <b>▲ Up</b> or <b>▼ Down</b>. Click the same button again to remove your vote. You cannot vote on your own posts.</li>
+<li>To accept an answer, click <b>Accept answer</b> on it. Only the person who asked the question can accept an answer. To undo it, click <b>Unaccept</b>. The accepted answer always shows first.</li>
+<li>To edit your own question or answer, click <b>Edit</b>, change the text and save. Only the author can edit a post.</li>
+<li>To delete, click <b>Delete</b>. For a question, confirm with <b>Delete question and its answers</b>. These people can delete:
+<ul>
+<li>A question: its author while it has no answers, a Confluence administrator, or a space administrator of its space.</li>
+<li>An answer or a comment: its author, a Confluence administrator, or a space administrator of its space.</li>
+</ul></li>
+</ol>
+<p><img src="gs-question.png" alt="An open question with the Up and Down vote buttons, Edit, Delete, Add a comment, and the Your answer box with the Post answer button" style="max-width:100%;border:1px solid #e0e3e7;border-radius:6px"></p>
+
+<h3>4. Page-level Q&amp;A with Ask about this page (paid feature)</h3>
+<ol>
+<li>Open a page or a blog post.</li>
+<li>Click <b>Ask about this page</b> in the byline under the title. A panel opens with the questions about this page or blog post.</li>
+<li>Click <b>Ask a question</b> and continue as in step 2. Only people who can view the page see its questions. Page restrictions apply.</li>
+<li>Page questions also show on the AskSpace home and on the Q&amp;A page of the space that the page is in.</li>
+</ol>
+<p>This feature needs an active license or a free trial. Without one, the panel is read-only.</p>
+
+<h3>5. Add the AskSpace questions macro (paid feature)</h3>
+<ol>
+<li>Edit a page.</li>
+<li>Type <code>/AskSpace</code> or open the macro browser, and select <b>AskSpace questions</b>.</li>
+<li>Open the macro settings and set these fields:
+<ul>
+<li><b>Topic (optional)</b>: show only the questions with this topic, for example "onboarding". Leave it empty to show all topics.</li>
+<li><b>Show questions from</b>: <b>This space only</b> or <b>All spaces I can see</b>.</li>
+<li><b>Filter</b>: <b>All questions</b> or <b>Unanswered only</b>.</li>
+<li><b>Questions per page</b>: 5, 10 or 20.</li>
+</ul></li>
+<li>Publish the page. Each reader sees only the questions that they have access to.</li>
+<li>Readers can click <b>Ask a question</b> in the macro. A question asked from the macro always belongs to the current space, also when the macro shows all spaces.</li>
+</ol>
+<p><img src="gs-macro.png" alt="The AskSpace questions macro on a page, with the Ask a question button and a question list" style="max-width:100%;border:1px solid #e0e3e7;border-radius:6px"></p>
+<p>This feature needs an active license or a free trial. Without one, the macro is read-only.</p>
+
+<h3>Help</h3>
+<p>Email <a href="mailto:support@zovo.one?subject=AskSpace%20support">support@zovo.one</a>. We reply within 1 business day (Monday to Friday, 09:00 to 17:00, UTC+7). See also the <a href="index.html">full documentation</a> and the <a href="support.html">support page</a>.</p>
+</body></html>
