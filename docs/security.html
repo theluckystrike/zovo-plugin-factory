@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zovo security policy for Atlassian apps</title><meta name="description" content="How Zovo handles security reports, incidents and vulnerabilities in its Atlassian Marketplace apps, and which security controls the apps use."><style>body{font:16px/1.6 system-ui,sans-serif;max-width:860px;margin:0 auto;padding:24px 16px;background:#fff;color:#17191d}a{color:#2456c8}code{background:#f0f2f5;padding:1px 4px;border-radius:4px;font-size:.92em}.tw{overflow-x:auto}table{border-collapse:collapse;margin:10px 0}th,td{border:1px solid #e0e3e7;padding:6px 8px;text-align:left;vertical-align:top}nav a{margin-right:14px}@media(prefers-color-scheme:dark){body{background:#121417;color:#e8eaed}a{color:#7da2ff}code{background:#1f242b}th,td{border-color:#2a2f36}}</style></head><body>
+<nav><a href="apps/index.html">Atlassian apps</a><a href="index.html">All products</a></nav>
+<h1>Security policy for Zovo Atlassian apps</h1>
+<p>Last updated: 18 November 2026. This policy applies to the Zovo apps on the Atlassian Marketplace. The publisher is AUTOM8 LLC, vendor name Zovo.</p>
+
+<h2>1. Report a security issue</h2>
+<ul>
+<li>Send the report to <a href="mailto:support@zovo.one">support@zovo.one</a>. Put "Security" in the subject line.</li>
+<li>Tell us the app name, the steps to reproduce the issue and what an attacker can do with it.</li>
+<li>Do not put customer data or secrets in a public GitHub issue.</li>
+<li>We reply within 1 business day. Our business hours are Monday to Friday, 09:00 to 17:00 UTC+7.</li>
+<li>We tell you when we accept the issue, when the fix is released, and if we need more information.</li>
+</ul>
+
+<h2>2. Security incident handling</h2>
+<p>A security incident is an event where customer data can be read, changed or lost by a person who must not have access, or where an app does not work as designed because of an attack. When we find or get a report of an incident, we do these steps:</p>
+<ol>
+<li><b>Notify Atlassian.</b> We open a P1 ticket with Atlassian Marketplace within 24 hours. While the incident is open, we send an update at least every 6 hours.</li>
+<li><b>Contain.</b> We stop the cause as fast as possible. We can disable a function, deploy a fix or ask Atlassian to hide the app.</li>
+<li><b>Investigate.</b> We find the root cause, the time period, the affected sites and the data that was involved.</li>
+<li><b>Fix.</b> We remove the root cause and add a test so that the same problem does not come back.</li>
+<li><b>Notify customers.</b> We tell the affected customers within 72 hours after we identify the incident, where we can identify them. We use the Atlassian incident communication template.</li>
+<li><b>Review.</b> We do a post-incident review and send the results to Atlassian in the incident ticket.</li>
+</ol>
+<p>These steps follow the <a href="https://developer.atlassian.com/platform/marketplace/app-security-incident-management-guidelines/">Atlassian security incident guidelines for Marketplace partners</a>.</p>
+
+<h2>3. Vulnerability management</h2>
+<ul>
+<li><b>Sources.</b> We get vulnerability reports from support@zovo.one, from Atlassian Marketplace Security tickets and from dependency scans.</li>
+<li><b>Triage.</b> We confirm the issue and give it a severity with CVSS.</li>
+<li><b>Fix time.</b> We fix each issue within the time limits of the <a href="https://developer.atlassian.com/platform/marketplace/security-bugfix-policy/">Atlassian security bug fix policy</a>:
+<div class="tw"><table><tr><th>Severity</th><th>CVSS score</th><th>Fix released within</th></tr>
+<tr><td>Critical</td><td>9.0 to 10.0</td><td>10 days</td></tr>
+<tr><td>High</td><td>7.0 to 8.9</td><td>4 weeks</td></tr>
+<tr><td>Medium</td><td>4.0 to 6.9</td><td>12 weeks</td></tr>
+<tr><td>Low</td><td>0.1 to 3.9</td><td>25 weeks</td></tr></table></div></li>
+<li><b>Release.</b> We fix the code, run the app's unit tests, run <code>npm audit</code> and deploy the new version with the Forge CLI. Forge apps update on customer sites without action from the customer.</li>
+<li><b>Dependencies.</b> We run <code>npm audit</code> before each release. When a library has a known vulnerability, we update it or pin a fixed version.</li>
+<li><b>Notification.</b> For a critical vulnerability, we tell Atlassian and the affected customers. We use the Atlassian vulnerability notification template.</li>
+</ul>
+
+<h2>4. Security controls</h2>
+<h3>Hosting</h3>
+<ul>
+<li>All Zovo Atlassian apps are Forge apps. Their code runs on Atlassian's Forge platform, and their data stays in Forge storage (Forge key-value storage or Forge SQL) on Atlassian.</li>
+<li>Zovo runs no servers for these apps. The apps do not use Forge Remote or web triggers.</li>
+<li>No data leaves the Atlassian cloud, unless the app's privacy notice says so. One app sends requests outside Atlassian: Code Snippets from GitHub Gists reads gists from <code>api.github.com</code>. It sends only read (GET) requests and stores nothing on GitHub.</li>
+</ul>
+<h3>Access control and authentication</h3>
+<ul>
+<li>Users sign in with their Atlassian account. The apps do not ask for Atlassian passwords or API tokens.</li>
+<li>Each app asks only for the Forge scopes that its functions need. The scopes are in the app's manifest and on its Marketplace listing.</li>
+<li>Product API calls run as the current user (<code>asUser</code>), so a user sees only the content that Jira or Confluence permissions let that user see. Four apps also make calls as the app (<code>asApp</code>) for background jobs, for example scheduled scans and reminders. Each app's documentation tells what these jobs do.</li>
+<li>Only Zovo staff can deploy the apps. The source code account requires two-factor authentication.</li>
+</ul>
+<h3>Data protection</h3>
+<ul>
+<li>Atlassian encrypts the traffic between users, the Forge platform and the Atlassian product APIs with TLS.</li>
+<li>Atlassian encrypts Forge hosted storage at rest.</li>
+<li>Zovo keeps no copies of customer data outside Atlassian.</li>
+<li>The Gists app can store an optional GitHub token that a site admin enters. The app keeps it in Forge secret storage and does not write it to logs.</li>
+</ul>
+<h3>Secure development</h3>
+<ul>
+<li>The apps check user input in the backend functions before use. REST paths are checked against an allow-list of endpoints. Forge SQL queries use bound parameters. User text is shown as text. Where an app shows Markdown as HTML, it sanitizes the HTML first.</li>
+<li>Each app has unit tests, including tests for input checks, escaping and permission checks. The tests run before each release.</li>
+<li>The development computer uses full disk encryption, automatic operating system security updates and malware protection.</li>
+</ul>
+<h3>Logging and monitoring</h3>
+<ul>
+<li>The apps write logs to the Forge platform. Forge adds a time stamp to each log line.</li>
+<li>The logs contain error names, status codes and counts. They do not contain passwords, tokens or the content of pages and issues.</li>
+<li>Only the app developer can read the Forge logs in the Atlassian developer console.</li>
+</ul>
+
+<h2>5. What we do not claim</h2>
+<ul>
+<li>AUTOM8 LLC does not hold ISO 27001, SOC 2, PCI DSS or HIPAA certification.</li>
+<li>We do not take part in the Marketplace bug bounty program at this time, and we have not done a third-party penetration test.</li>
+</ul>
+<p>Privacy notices for each app are linked from the <a href="apps/index.html">Atlassian apps page</a>. Questions about this policy: <a href="mailto:support@zovo.one">support@zovo.one</a>.</p>
+</body></html>
