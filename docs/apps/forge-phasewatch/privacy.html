@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Phasewatch privacy</title><style>body{font:16px/1.6 system-ui,sans-serif;max-width:860px;margin:0 auto;padding:24px 16px;background:#fff;color:#17191d}a{color:#2456c8}code{background:#f0f2f5;padding:1px 4px;border-radius:4px;font-size:.92em}pre{background:#f0f2f5;padding:12px;overflow-x:auto;border-radius:6px}.tw{overflow-x:auto}table{border-collapse:collapse;margin:10px 0}th,td{border:1px solid #e0e3e7;padding:6px 8px;text-align:left;vertical-align:top}nav a{margin-right:14px}header{display:flex;gap:14px;align-items:center}header img{width:56px;height:56px;border-radius:12px}@media(prefers-color-scheme:dark){body{background:#121417;color:#e8eaed}a{color:#7da2ff}code,pre{background:#1f242b}th,td{border-color:#2a2f36}}
+.support{margin:30px 0 10px;padding:16px 18px;border:1px solid var(--line,#e0e3e7);border-radius:10px;background:var(--card,#f6f7f9)}
+.support h2{margin:0 0 6px;font-size:21px}.support p{margin:6px 0}.support .row{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin:12px 0 4px}
+.support .btn-sponsor{display:inline-flex;align-items:center;min-height:48px;box-sizing:border-box;padding:0 20px;border-radius:8px;font-weight:600;text-decoration:none;background:var(--acc,#2456c8);color:#fff;border:1px solid var(--acc,#2456c8)}
+.support .alt{display:inline-flex;align-items:center;min-height:48px}
+.support h3{margin:18px 0 4px;font-size:17px}.support ul{margin:6px 0 0;padding-left:20px}.support li{margin:6px 0}
+@media(prefers-color-scheme:dark){.support{border-color:var(--line,#2a2f36);background:var(--card,#1a1e23)}.support .btn-sponsor{background:var(--acc,#7da2ff);border-color:var(--acc,#7da2ff);color:#0b0d10}}
+</style></head><body><header><img src="logo.png" alt=""><h1>Phasewatch</h1></header><nav><a href="index.html">Documentation</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="../../index.html">All products</a><a href="../../vscode/index.html">VS Code extensions</a><a href="../../apify/index.html">Apify Actors</a></nav><h2>Privacy</h2>
+<p>Phasewatch - Time in Status for Jira runs on Atlassian Forge. It has no remote back end and makes no calls outside your Jira site.</p>
+<h3>What it reads</h3>
+<p>The app calls these Jira endpoints as the signed-in user. Every call runs as you, so the app shows times only for work items you can already see.</p>
+<ul><li><code>GET /rest/api/3/issue/{id}</code> reads the created date, the status and the resolution date of the open work item.</li><li><code>GET /rest/api/3/issue/{id}/changelog</code> reads the history of the open work item. The app uses only the status changes.</li><li><code>GET /rest/api/3/status</code> reads the status names and their categories.</li><li><code>POST /rest/api/3/search/jql</code> runs the JQL of the report gadget.</li><li><code>POST /rest/api/3/changelog/bulkfetch</code> reads the status changes of the work items in the report.</li></ul>
+<h3>What it stores</h3>
+<p>Data stays in Forge app storage on Atlassian&#x27;s platform.</p>
+<div class="tw"><table><tr><th>Record</th><th>Contents</th><th>Kept for</th></tr><tr><td>Result cache</td><td>Finished times per status, status names, and for the gadget the work item keys, summaries (cut to 120 characters) and current statuses</td><td>60 seconds</td></tr><tr><td>Status list cache</td><td>Status ids, names and categories</td><td>1 hour</td></tr><tr><td>Working-hours settings</td><td>Calendar or working time, working days, start and end hour, time zone</td><td>90 days after the last save or use</td></tr></table></div>
+<p>Each record key is a SHA-256 hash that includes your Atlassian account ID. So one person&#x27;s results and settings are never shown to another person. The account ID itself is not stored as a value. The app stores no names, email addresses, avatars, comments or history authors.</p>
+<h3>What it does not do</h3>
+<p>It has no scope that writes to Jira. It does not send data to the developer or to any third party. It does not use analytics or tracking.</p>
+<h3>Removal</h3>
+<p>Uninstalling the app removes its Forge storage. Cached records also expire on their own after the times above.</p>
+<h3>Contact</h3>
+<p>Email support@zovo.one with questions about privacy.</p></body></html>
