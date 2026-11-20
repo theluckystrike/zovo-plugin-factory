@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pricing</title><meta name="description" content="Zovo Pro price research, 20 Nov 2026: rival prices, our funnel, revenue model, price decision and the next sprint.">
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#666;--line:#ddd;--acc:#0b5cad;--card:#f6f7f9;--good:#1a7f37;--bad:#b42318}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111;--fg:#e8e8e8;--mut:#9a9a9a;--line:#333;--acc:#6aa8ff;--card:#1b1d21;--good:#4ac26b;--bad:#ff7b72}}
+:root[data-theme="dark"]{--bg:#111;--fg:#e8e8e8;--mut:#9a9a9a;--line:#333;--acc:#6aa8ff;--card:#1b1d21;--good:#4ac26b;--bad:#ff7b72}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;margin:0}
+nav.top{display:flex;flex-wrap:wrap;gap:4px 14px;padding:10px 16px;border-bottom:1px solid var(--line);font-size:14px}
+nav.top a{color:var(--acc);text-decoration:none}
+main{max-width:1000px;margin:0 auto;padding:16px}
+h1{font-size:26px;margin:8px 0 4px}h2{font-size:19px;margin:28px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}
+.mut{color:var(--mut)}.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;margin:8px 0 16px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top;font-size:14px}
+th{font-weight:600}td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:14px 0}
+.kpi{background:var(--card);border-radius:8px;padding:12px}.kpi b{display:block;font-size:24px}.kpi span{font-size:13px;color:var(--mut)}
+.dec{background:var(--card);border-left:4px solid var(--acc);padding:12px 14px;border-radius:6px;margin:12px 0}
+.g{color:var(--good)}.r{color:var(--bad)}
+pre{background:var(--card);padding:12px;border-radius:6px;white-space:pre-wrap;font-size:13px}
+ol li,ul li{margin:5px 0}
+</style></head><body>
+<nav class="top"><a href="index.html">Overview</a><a href="products.html">Products</a><a href="vscode/index.html">VS Code</a><a href="open/index.html">Guides</a><a href="tools/index.html">Browser tools</a><a href="apps/index.html">Atlassian</a><a href="apify/index.html">Apify</a><a href="sprint.html">Sprint</a><a href="next24.html">Next 24h</a><a href="insights.html">Insights</a><a href="money.html">Money</a><a href="growth.html">Growth</a><a href="kpi.html">Conversion KPIs</a><a href="competition.html">Competition</a><a href="conversion.html">Conversion</a><a href="pricing.html">Pricing</a><a href="traffic.html">Traffic</a><a href="users.html">Users</a><a href="report.html">Full report</a></nav>
+<main>
+<h1>Pricing</h1>
+<p class="mut">Zovo Pro price research. Run 20 Nov 2026, 14:20 to 15:20 (UTC+7). 10 agents. F = fetched, E = estimate. A10 verified the key claims.</p>
+
+<div class="kpis">
+<div class="kpi"><b>USD 29</b><span>Recommended Personal price (now USD 19)</span></div>
+<div class="kpi"><b>USD 59 / seat</b><span>Recommended Business price (now USD 11.80 a seat)</span></div>
+<div class="kpi"><b>35 / 100</b><span>Rating of the USD 19 price today</span></div>
+<div class="kpi"><b>56 / 100</b><span>Pro offer value against a USD 99 rival (A3)</span></div>
+</div>
+
+<div class="dec"><b>Decision.</b> Set Personal to USD 29 once. Show the date when it goes to USD 39 (1 Jan 2027). Sell Business at USD 59 a seat, 2.0x Personal, with an invoice and tax ID. Keep free features free. Price is a small lever: about +USD 20 to 60 a month. Reach and trust are the big levers.</div>
+
+<h2>1. Top 5 insights</h2>
+<div class="tw"><table><tr><th>#</th><th>Finding</th><th>Delta</th><th>Evidence</th><th>Conf.</th></tr>
+<tr><td>1</td><td>Price does not stop buyers today. The revenue curve is flat from USD 19 to 59.</td><td>USD 235 to 240 a month across 19 to 59 (±1 %)</td><td>A7 model, re-run by A10. "Too expensive": 0 of 11 Not-now opens (A4, F)</td><td>M, 2 card sales only</td></tr>
+<tr><td>2</td><td>The 7-day trial dialog sells. Other surfaces do not.</td><td>2 of 4 trial-dialog checkout people paid. 0 of 8 from other surfaces</td><td>A4, Stripe API (F)</td><td>M, n=12</td></tr>
+<tr><td>3</td><td>We sell below the market. The company seat is far below.</td><td>VS Code one-time median USD 31.49 (1.7x). Business/Personal 2.0x. Our Team seat 0.62x</td><td>A1, 265 rows (F). CAN Atlas USD 29 / 59 a user (A9, F)</td><td>H</td></tr>
+<tr><td>4</td><td>Trust is weaker than value. The proof gap costs more than the price.</td><td>Content 78, trust 29. 4 ratings on 136 listings. 4 seller names. zovo.one sells a different "Zovo Pro" at USD 99</td><td>A3, A10 C6 (F)</td><td>H</td></tr>
+<tr><td>5</td><td>Most installs are in jobs with a strong free rival.</td><td>84 % of top-20 installs. Hex: 1 to 4,240 against Microsoft Hex Editor</td><td>A2 gallery API (F)</td><td>H</td></tr>
+</table></div>
+
+<h2>2. Price comparison</h2>
+<div class="tw"><table><tr><th>Group</th><th class="n">Median</th><th class="n">Ratio to USD 19</th><th>Source</th></tr>
+<tr><td>VS Code one-time Personal (n=12)</td><td class="n">31.49</td><td class="n">1.7x</td><td>A1 F</td></tr>
+<tr><td>JetBrains annual Personal (n=207)</td><td class="n">19 a year</td><td class="n">1.0x a year</td><td>A1 F</td></tr>
+<tr><td>Desktop tools, same jobs (21 paid)</td><td class="n">99.99</td><td class="n">5.3x</td><td>A6 F</td></tr>
+<tr><td>SQLite Viewer PRO ("25 bought recently", 3.79 M installs)</td><td class="n">99</td><td class="n">5.2x</td><td>A1, A5 F</td></tr>
+<tr><td>Dracula Pro (8,101 sales, USD 54.66 average sale)</td><td class="n">79</td><td class="n">4.2x</td><td>A5 F</td></tr>
+</table></div>
+
+<h2>3. Numbers</h2>
+<div class="tw"><table><tr><th>Measure</th><th class="n">Value</th><th>Source</th></tr>
+<tr><td>Installs, 136 listings (20 Nov 15:07)</td><td class="n">6,813</td><td>A10 F</td></tr>
+<tr><td>Zovo Pro payments since 10 Nov</td><td class="n">4 (about 3 buyers), USD 76</td><td>A4 F</td></tr>
+<tr><td>All cash since 10 Nov</td><td class="n">USD 136</td><td>A4 F</td></tr>
+<tr><td>Installs at a buy step, per 1,000</td><td class="n">4.3 (9 to 11 since 18 Nov)</td><td>A4, A10 F</td></tr>
+<tr><td>Net per USD 19 sale, any channel</td><td class="n">USD 15.75 to 17.84</td><td>A8 E</td></tr>
+<tr><td>Price gain, USD 29 + Business against today</td><td class="n">+USD 20 to 60 a month</td><td>A7 E, P 0.64 to 0.96</td></tr>
+<tr><td>Sales to prove a 2x revenue change by A/B</td><td class="n">about 66 (11 months now)</td><td>A7 E</td></tr>
+<tr><td>Run cost</td><td class="n">10 agents, about 2.3 M tokens, 60 min</td><td>agent logs</td></tr>
+</table></div>
+
+<h2>4. Ratings (brutal)</h2>
+<ul>
+<li><b>USD 19 price: 35/100.</b> It is below 25 of 26 desktop analogs. The Team seat is 0.62x Personal, against a 2.0x market norm.</li>
+<li><b>Pro offer: 56/100.</b> About 518 Pro tools. About 9 minutes saved for each use (E). Proof is weak.</li>
+<li><b>Monetization system: 30/100.</b> USD 76 of Pro from 6,813 installs. Only the trial dialog sells.</li>
+<li><b>This research: 84/100.</b> All claims carry F or E. The elasticity is not identified with 2 sales. A10 found 1 error (sponsor term USD 124 a month, real about USD 56 to 112).</li>
+</ul>
+
+<h2>5. Failed or unknown</h2>
+<ul>
+<li>Price elasticity: unknown. Need about 66 sales. Use a dated step-up, not an A/B test.</li>
+<li>Pro tries, panel views, trial starts: no beacon. Unknown.</li>
+<li>GitLens, Wallaby, Quokka prices: hidden behind JavaScript.</li>
+<li>One Sponsors payment (17 Nov, tier changed 19 Nov): the owner's Sponsors export can tell.</li>
+</ul>
+
+<h2>6. Next 3 actions, ranked by expected value</h2>
+<ol>
+<li><b>Put the 7-day trial dialog on the top 30 listings by installs.</b> It sold 2 of 4. Revenue scales 1:1 with reach at any price (A7).</li>
+<li><b>Fix trust at the buy step.</b> One seller name, the tool list on /buy, terms and privacy, and a new name for one of the two "Zovo Pro" products. The trust gap is 32 points against 6 for the price (A3).</li>
+<li><b>Change the price (owner decision).</b> Personal USD 29, Business USD 59 a seat, dated step to USD 39 on 1 Jan 2027. +USD 20 to 60 a month now, x3 at 3x installs (A7).</li>
+</ol>
+
+<h2>7. Owner approval needed</h2>
+<ul>
+<li>Stripe: new Payment Links, Personal USD 29 and Business USD 59 a seat (quantity on, tax ID on). Archive the USD 19 and USD 59 Team links after the swap.</li>
+<li>GitHub Sponsors: move the USD 19 Pro-key tier to USD 29. If not, it undercuts the new price (A10).</li>
+<li>Existing Team buyers keep their 5 seats. No change to past keys.</li>
+<li>Stripe Managed Payments (3.5 %) or Polar: one seller name, and VAT is handled. The UK VAT duty starts at sale 1 (A8, A10 F).</li>
+<li>Stop rule: if, after 30 checkouts at USD 29, fewer than 15 % pay (now 2 of 10), go back to USD 19.</li>
+</ul>
+
+<h2>8. Next sprint goal</h2>
+<p>Agents: copy this command. Start it after the owner answers section 7.</p>
+<pre>/goal Run Zovo sprint v9 (price and reach) from ~/vscode-pricing-work/run-20261120 for 24 h, autonomous. Aim: Zovo Pro paid per 1,000 installs above 0.6. Read out/A1..A10.md first.
+Lanes:
+TRIAL3: put the 7-day trial dialog on the top 30 listings by installs that do not have it. Start only after a click. Tag trialstart_&lt;listing&gt;.
+PRICE2 (only after owner yes): show USD 29 Personal and USD 59 a seat Business in /buy, the Pro panel and the top 30 READMEs. Show "USD 39 from 1 Jan 2027". Swap Stripe links with a key that is not live first.
+TRUST2: on /buy, list the Pro tools of the listing the buyer came from. Add terms and privacy. Remove the stale install line.
+BRAND2: write a proposal to rename one of the two "Zovo Pro" products (VS Code and Chrome). Owner decides.
+MEAS5: every 6 h, write paid per 1,000 installs, per 1,000 buy-step people and per surface. Apply the stop rule.
+Rules: 2 PASSes from other agents for each build. Free features stay free. No popup on open. Never open a live payment link. Humanize strict scan, 0 HARD. ASD-STE100. No AI attribution. [skip ci] on docs.
+Done when: TRIAL3 is live on 30 listings, /buy shows the tool list, out/MEAS5.md has 4 reads, and the site Pricing page shows the v9 result.</pre>
+
+<p class="mut">Sources: ~/vscode-pricing-work/run-20261120/out/A1.md to A10.md, CSV files and scripts. Built 20 Nov 2026 (UTC+7).</p>
+</main></body></html>
