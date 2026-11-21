@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hermes agents</title><meta name="description" content="How the Hermes agents did in sprints v8 and v9: verifiers, builders, research, cost and the plan."><link rel="stylesheet" href="site.css"></head><body>
+<nav class="top"><a href="index.html">Overview</a><a href="products.html">Products</a><a href="vscode/index.html">VS Code</a><a href="open/index.html">Guides</a><a href="tools/index.html">Browser tools</a><a href="apps/index.html">Atlassian</a><a href="apify/index.html">Apify</a><a href="sprint.html">Sprint</a><a href="next24.html">Next 24h</a><a href="insights.html">Insights</a><a href="money.html">Money</a><a href="growth.html">Growth</a><a href="kpi.html">Conversion KPIs</a><a href="competition.html">Competition</a><a href="conversion.html">Conversion</a><a href="pricing.html">Pricing</a><a href="price-insights.html">Price insights</a><a href="hermes.html">Hermes</a><a href="traffic.html">Traffic</a><a href="users.html">Users</a><a href="report.html">Full report</a></nav>
+<main style="max-width:1000px;margin:0 auto;padding:16px">
+<h1>Hermes agents</h1>
+<p class="mut">Sprints v8 and v9, 19 to 21 Nov 2026. Hermes runs on a fast, low-cost model through the model lock. The build seat has no tokens and no access to the shell profile.</p>
+
+<h2>Short answer</h2>
+<p>Hermes is a good verifier and a good research lane. As a builder it works only on simple, proven jobs. Every build still needs one PASS from a verifier that is not Hermes, and a Hermes verifier never checks a Hermes build.</p>
+
+<h2>Verification works</h2>
+<div class="tw"><table>
+<tr><th>Lane</th><th>Job</th><th class="n">Verdicts</th><th class="n">PASS</th><th class="n">BLOCK</th></tr>
+<tr><td>VER33</td><td>Static checks</td><td class="n">90</td><td class="n">76</td><td class="n">14</td></tr>
+<tr><td>VER34</td><td>Real VS Code gates</td><td class="n">69</td><td class="n">49</td><td class="n">20</td></tr>
+</table></div>
+<p>The BLOCKs found real faults: an old rating module, more than 1 free try per Pro tool, the trial not first in the Hex Pro panel, and wrong tool ids in Mermaid. About 13 VER34 BLOCKs were on old rows that were already live, so they changed nothing. When the codex Plus seat ran out of usage on 20 Nov, Hermes did most static checks and kept the publisher moving.</p>
+
+<h2>Building works only on simple jobs</h2>
+<div class="tw"><table>
+<tr><th>Lane</th><th>Task</th><th>Result</th></tr>
+<tr><td>HTEST1</td><td>1 listing, proven recipe</td><td><b>PASS and live</b> (VCD Waveform Viewer 0.2.8, the first Hermes-built release)</td></tr>
+<tr><td>HFIX1</td><td>6 small fixes</td><td>0 done in 2 runs; moved to the main account</td></tr>
+<tr><td>HCONV11</td><td>14 listings, older module layout</td><td>0 READY rows in 5 runs; moved to the main account</td></tr>
+<tr><td>SEO1</td><td>8 guide pages</td><td>0 pages in 4 runs; stopped</td></tr>
+<tr><td>CONV9, CONV10, CONV11, NEWB17 (v8)</td><td>Pattern builds</td><td>0 READY rows; moved to the main account</td></tr>
+</table></div>
+<p>Why builds fail: each shell command was cut off after 120 s (fixed on the hermes-build2 seat with a 1,500 s limit), runs end early with a plan instead of the work, and tasks with variation (older module layouts, several fixes in one lane) confuse the model.</p>
+
+<h2>Research works</h2>
+<p>HRES4 to HRES9 and APIFY3 delivered complete reports with sources on time. The CONV7 funnel insight and the v9 focus on niche engineering and database tools came from this research.</p>
+
+<h2>Cost</h2>
+<p>About USD 11 in total for v8 and v9, USD 6.10 of it since 20 Nov 20:30 (6,911 calls). About USD 14 of the USD 25 balance is left.</p>
+
+<h2>Plan</h2>
+<ul>
+<li>Keep Hermes on static and real-app verification and on research.</li>
+<li>Give Hermes a build only when it is one listing with a step-by-step recipe that already passed.</li>
+<li>Keep new Pro tools, fixes and listings with older layouts on the main account.</li>
+<li>A top-up pays off for the verifiers, especially while codex Plus is out (until 24 Nov), not for more Hermes builds.</li>
+</ul>
+<p class="mut" style="margin-top:30px">Written 21 Nov 2026 (UTC+7) from out/VER-verdict.tsv, the lane reports and the model-lock cost ledger.</p>
+</main></body></html>
