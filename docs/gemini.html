@@ -16,9 +16,9 @@
 22:58:30 G1 LAUNCH GN15 seat=gemini dir= tmo=2400
 22:59:20 G1 LAUNCH GN13 seat=gemini dir= tmo=2400</pre><h2 id="cost">Cost per product (Gemini 4 Neon to QGATE 100)</h2><pre class="log"># G1 cost per product, Gemini agentic coding to QGATE 100
 
-Updated 22 Nov 22:56 (UTC+7) by out/G1-scripts/cost.py. Window from 22 Nov 13:00.
+Updated 22 Nov 23:11 (UTC+7) by out/G1-scripts/cost.py. Window from 22 Nov 13:00.
 
-Weekly Gemini quota: 99.7% at 13:00, 75.59% now, drop 24.11 points (F). All Gemini tokens since 13:00: 51,464,913 (F).
+Weekly Gemini quota: 99.7% at 13:00, 74.74% now, drop 24.96 points (F). All Gemini tokens since 13:00: 52,176,432 (F).
 
 | lane | state | last score line | Gemini calls | agent minutes | tokens | weekly quota points (E) | models |
 |---|---|---|---|---|---|---|---|
@@ -34,29 +34,30 @@ Weekly Gemini quota: 99.7% at 13:00, 75.59% now, drop 24.11 points (F). All Gemi
 | GB3 | running |  | 1 | 40.1 | 406,475 | 0.19 | gemini-4-neon-medium |
 | GB3B | running |  | 1 | 40.1 | 83,210 | 0.04 | gemini-4-neon-medium |
 | GB4 | running |  | 1 | 40.1 | 340,168 | 0.16 | gemini-4-neon-medium |
-| GB5 | running |  | 1 | 40.1 | 1,310,904 | 0.61 | gemini-4-carbon-high |
-| GMOD1 | done |  | 1 | 11.4 | 597,754 | 0.28 | gemini-4-carbon-high |
+| GB5 | running |  | 1 | 40.1 | 1,310,904 | 0.63 | gemini-4-carbon-high |
+| GMOD1 | done |  | 1 | 11.4 | 597,754 | 0.29 | gemini-4-carbon-high |
 | GN1 | done | 2026-11-22T20:00:23+0700	100	none | 2 | 39.2 | 364,028 | 0.17 | gemini-4-neon-medium |
-| GN10 | done | 2026-11-22 19:14	100/100	none | 3 | 99.7 | 756,406 | 0.35 | gemini-4-neon-medium |
+| GN10 | done | 2026-11-22 19:14	100/100	none | 3 | 99.7 | 756,406 | 0.36 | gemini-4-neon-medium |
 | GN11 | done | 2026-11-22 19:08:50	100/100	none | 3 | 92.4 | 396,154 | 0.19 | gemini-4-neon-medium |
-| GN12 | done | 2026-11-22T19:10:52+0700	100	none | 2 | 79.3 | 350,623 | 0.16 | gemini-4-neon-medium |
-| GN13 | running | 2026-11-22T21:48:50+0700	pre-gate	43de205b7f4643de6525e625da85322c544ec035d1ee2bf397c9ac835991d4f4	SCORE 60/100 zovo.zovo-bvh-viewer 0.1.0 sha 43de205b7f46 failed: realapp,conv8b,activation,onopen |  | 1 | 40.1 | 187,067 | 0.09 | gemini-4-neon-medium |
-| GN14 | done | 2026-11-22T22:37:59+0700	e4678b5dfe52f99311d30849063bfaf2da69849497c65f9c3e2ae257d2e9ed93	SCORE 100/100 zovo.zovo-amf-viewer 0.1.0 sha e4678b5dfe52 failed: none |  | 1 | 37.2 | 265,887 | 0.12 | gemini-4-neon-medium |
+| GN12 | done | 2026-11-22T19:10:52+0700	100	none | 2 | 79.3 | 350,623 | 0.17 | gemini-4-neon-medium |
+| GN13 | done | 2026-11-22T23:10:41+0700	post-gate-run4	56afa363f439a71e0ffc7124eb423e3c39f42a2c8f3d6b4bc8a52084c2b8c7a5	SCORE 100/100 zovo.zovo-bvh-viewer 0.1.0 sha 56afa363f439 failed: none |  | 2 | 80.2 | 268,682 | 0.13 | gemini-4-neon-medium |
+| GN14 | done | 2026-11-22T22:37:59+0700	e4678b5dfe52f99311d30849063bfaf2da69849497c65f9c3e2ae257d2e9ed93	SCORE 100/100 zovo.zovo-amf-viewer 0.1.0 sha e4678b5dfe52 failed: none |  | 1 | 37.2 | 265,887 | 0.13 | gemini-4-neon-medium |
+| GN15 | done | 2026-11-22T23:05:29+0700	final-gate-run2	be28683c7d1b10f8c788235303eefedf876ec625261b9a179ec7eaf12761e9b0	SCORE 100/100 zovo.zovo-svf-viewer 0.1.0 sha be28683c7d1b failed: none |  | 2 | 48.1 | 295,974 | 0.14 | gemini-4-neon-medium |
 | GN2 | done | 2026-11-22 14:15	100	none (rescored by ORCH-H24b with the owner-approved scorer fix) | 1 | 37.1 | 338,528 | 0.16 | gemini-4-neon-medium |
 | GN3 | done | 2026-11-22T20:18:31+07:00	100	none | 2 | 65.5 | 593,224 | 0.28 | gemini-4-neon-medium |
 | GN4 | done | 2026-11-22T20:05:58+07:00	SCORE 100/100 zovo.zovo-saz-viewer 0.1.0 sha 4b04c70d4094 failed: none |  | 2 | 49.9 | 549,597 | 0.26 | gemini-4-neon-medium |
 | GN5 | done | 2026-11-22T19:00:08+0700	100	none | 2 | 66.8 | 293,010 | 0.14 | gemini-4-neon-medium |
 | GN6 | done | 2026-11-22T12:45:51Z	100/100	none | 1 | 29.7 | 203,182 | 0.10 | gemini-4-neon-medium |
-| GN7 | done | 2026-11-22 20:48:55	100/100	none | 2 | 49.2 | 367,926 | 0.17 | gemini-4-neon-medium |
+| GN7 | done | 2026-11-22 20:48:55	100/100	none | 2 | 49.2 | 367,926 | 0.18 | gemini-4-neon-medium |
 | GN8 | done | 2026-11-22T20:35:05+07:00	100/100	none | 1 | 35.3 | 299,846 | 0.14 | gemini-4-neon-medium |
 | GN9 | done | 2026-11-22T21:10:28+0700	100	none | 2 | 67.0 | 442,389 | 0.21 | gemini-4-neon-medium |
 | HBUG2 | done |  | 1 | 10.3 | 356,530 | 0.17 | gemini-4-neon-medium |
-| HBUG3 | done |  | 1 | 13.0 | 241,601 | 0.11 | gemini-4-neon-medium |
-| HQA4 | running |  | 12 | 425.2 | 5,172,756 | 2.42 | gemini-4-carbon-high |
-| HSOFT10 | running |  | 4 | 151.5 | 332,977 | 0.16 | gemini-4-neon-medium |
-| VER38 | running |  | 12 | 400.9 | 6,974,469 | 3.27 | gemini-4-carbon-high |
-| other |  |  | 81 | 1059.9 | 28,134,862 | 13.18 | gemini-3.8-flash-low, gemini-4-carbon-high, gemini-4-neon-high |
+| HBUG3 | done |  | 1 | 13.0 | 241,601 | 0.12 | gemini-4-neon-medium |
+| HQA4 | running |  | 12 | 425.2 | 5,172,756 | 2.47 | gemini-4-carbon-high |
+| HSOFT10 | running |  | 5 | 188.4 | 405,396 | 0.19 | gemini-4-neon-medium |
+| VER38 | running |  | 12 | 400.9 | 6,974,469 | 3.34 | gemini-4-carbon-high |
+| other |  |  | 84 | 1070.0 | 28,396,373 | 13.58 | gemini-3.8-flash-low, gemini-4-carbon-high, gemini-4-neon-high |
 
 A product cost is final when its lane has SCORE 100 in its scores file and a .done file. &quot;other&quot; = Gemini calls with no lane (GQA, tests, other sessions).
 Note: the ledger writes a row when a call ends, so a running 40-minute call shows only after it ends.
-</pre><p class="mut" style="margin-top:30px">Page built 2026-11-22 23:03 (UTC+7) by factory/sprint/build_gemini.py. See also the <a href="sprint.html">Sprint</a> tab.</p></main></body></html>
+</pre><p class="mut" style="margin-top:30px">Page built 2026-11-22 23:21 (UTC+7) by factory/sprint/build_gemini.py. See also the <a href="sprint.html">Sprint</a> tab.</p></main></body></html>
