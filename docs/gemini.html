@@ -16,9 +16,9 @@
 2026-11-23 12:03:30 GREP DONE: REPORT-G1.md, 07-g1-report.html pushed [skip ci], G1-voice-note.aiff generated and played
 2026-11-23 12:03:46 G1 COMPLETE: stopped w18-schedG1 and 15-min cron</pre><h2 id="cost">Cost per product (Gemini 4 Neon to QGATE 100)</h2><pre class="log"># G1 cost per product, Gemini agentic coding to QGATE 100
 
-Updated 23 Nov 23:39 (UTC+7) by out/G1-scripts/cost.py. Window from 22 Nov 13:00.
+Updated 24 Nov 00:40 (UTC+7) by out/G1-scripts/cost.py. Window from 22 Nov 13:00.
 
-Weekly Gemini quota: 99.7% at 13:00, 48.88% now, drop 50.82 points (F). All Gemini tokens since 13:00: 100,675,306 (F).
+Weekly Gemini quota: 99.7% at 13:00, 48.75% now, drop 50.95 points (F). All Gemini tokens since 13:00: 101,009,622 (F).
 
 | lane | state | last score line | Gemini calls | agent minutes | tokens | weekly quota points (E) | models |
 |---|---|---|---|---|---|---|---|
@@ -47,7 +47,7 @@ Weekly Gemini quota: 99.7% at 13:00, 48.88% now, drop 50.82 points (F). All Gemi
 | GN16 | done | SCORE 100/100 zovo.zovo-sdc-viewer 0.1.0 sha 5c011fdd4d0a failed: none |  | 1 | 35.3 | 240,470 | 0.12 | gemini-4-neon-medium |
 | GN17 | done | 2026-11-22T23:34:18+0700	a236b672a411f9bbd1bc3a1be2d78a95f2c3d90fa106b9cbdc24d9bb80e1fbaa	100	-	 | 1 | 37.3 | 223,969 | 0.11 | gemini-4-neon-medium |
 | GN18 | done | 2026-11-22T23:56:52+0700	052f819748ac6e62535bb78aed5987932a7ddb294a543bf98a82ba677db59180	SCORE 100/100 zovo.zovo-g2o-viewer 0.1.0 sha 052f819748ac failed: none |  | 1 | 34.6 | 250,832 | 0.13 | gemini-4-neon-medium |
-| GN19 | done | 2026-11-23T01:10:25+07:00	e2c7fc82afc561716813eb37786918d2a08b765610678578f42a5ec2ea176135	100	none	final score with c8gate-atdf.json (49/49 PASS) and xsell.py | 2 | 72.3 | 326,900 | 0.17 | gemini-4-neon-medium |
+| GN19 | done | 2026-11-23T01:10:25+07:00	e2c7fc82afc561716813eb37786918d2a08b765610678578f42a5ec2ea176135	100	none	final score with c8gate-atdf.json (49/49 PASS) and xsell.py | 2 | 72.3 | 326,900 | 0.16 | gemini-4-neon-medium |
 | GN2 | done | 2026-11-22 14:15	100	none (rescored by ORCH-H24b with the owner-approved scorer fix) | 1 | 37.1 | 338,528 | 0.17 | gemini-4-neon-medium |
 | GN20 | done | 2026-11-23T00:20:10+0700	zovo.zovo-srdf-viewer	0.1.0	2359861c0c73d9cd64aa110c2b5730cd4cc9ccc7fcd8ddfba80eb8add1dd071a	100	-	GN20	 | 1 | 32.6 | 220,383 | 0.11 | gemini-4-neon-medium |
 | GN21 | done | 2	2026-11-23T01:26:38+0700	8e0a7bb75c1fd307c267db27820225e081a712d55001f8139057c7cb06bd008f	100	none	final VSIX with real screenshot, *.{dgn,DGN} selector fix, onopen fix, and 49/49 real-app gate PASS | 1 | 38.3 | 259,058 | 0.13 | gemini-4-neon-medium |
@@ -61,12 +61,12 @@ Weekly Gemini quota: 99.7% at 13:00, 48.88% now, drop 50.82 points (F). All Gemi
 | GN9 | done | 2026-11-22T21:10:28+0700	100	none | 2 | 67.0 | 442,389 | 0.22 | gemini-4-neon-medium |
 | HBUG2 | done |  | 1 | 10.3 | 356,530 | 0.18 | gemini-4-neon-medium |
 | HBUG3 | done |  | 1 | 13.0 | 241,601 | 0.12 | gemini-4-neon-medium |
-| HQA4 | running |  | 30 | 1027.8 | 10,985,828 | 5.55 | gemini-4-carbon-high |
+| HQA4 | running |  | 30 | 1027.8 | 10,985,828 | 5.54 | gemini-4-carbon-high |
 | HSOFT10 | done |  | 9 | 337.4 | 664,809 | 0.34 | gemini-4-neon-medium |
 | REPH24 | done |  | 1 | 6.5 | 241,710 | 0.12 | gemini-4-neon-medium |
-| VER38 | running |  | 47 | 1688.5 | 28,734,714 | 14.51 | gemini-4-carbon-high |
+| VER38 | running |  | 48 | 1725.7 | 29,069,030 | 14.66 | gemini-4-carbon-high |
 | XSELL1 | done |  | 2 | 13.8 | 319,659 | 0.16 | gemini-4-neon-medium |
-| other |  |  | 187 | 1751.1 | 45,606,465 | 23.02 | gemini-3.8-flash-low, gemini-4-carbon-high, gemini-4-neon-high |
+| other |  |  | 187 | 1751.1 | 45,606,465 | 23.00 | gemini-3.8-flash-low, gemini-4-carbon-high, gemini-4-neon-high |
 
 A product cost is final when its lane has SCORE 100 in its scores file and a .done file. &quot;other&quot; = Gemini calls with no lane (GQA, tests, other sessions).
 Note: the ledger writes a row when a call ends, so a running 40-minute call shows only after it ends.
@@ -151,4 +151,4 @@ Use Gemini 4 Neon for VS Code extension builds: YES (F).
 3. Reserve `gemini-4-carbon-high` for complex binary/XML parsers and `GREV` read-only reviews (F).
 4. Keep `VER28` (`codex-pro`) + `VER33`/`VER34` (`hermes`) as independent two-PASS gates before `GPUB` (F).
 5. Voice note saved to `out/G1-voice-note.aiff` and played for the owner (F).
-</pre><p class="mut" style="margin-top:30px">Page built 2026-11-23 23:49 (UTC+7) by factory/sprint/build_gemini.py. See also the <a href="sprint.html">Sprint</a> tab.</p></main></body></html>
+</pre><p class="mut" style="margin-top:30px">Page built 2026-11-24 00:51 (UTC+7) by factory/sprint/build_gemini.py. See also the <a href="sprint.html">Sprint</a> tab.</p></main></body></html>
