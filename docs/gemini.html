@@ -16,14 +16,14 @@
 2026-11-23 12:03:30 GREP DONE: REPORT-G1.md, 07-g1-report.html pushed [skip ci], G1-voice-note.aiff generated and played
 2026-11-23 12:03:46 G1 COMPLETE: stopped w18-schedG1 and 15-min cron</pre><h2 id="cost">Cost per product (Gemini 4 Neon to QGATE 100)</h2><pre class="log"># G1 cost per product, Gemini agentic coding to QGATE 100
 
-Updated 23 Nov 12:35 (UTC+7) by out/G1-scripts/cost.py. Window from 22 Nov 13:00.
+Updated 23 Nov 13:35 (UTC+7) by out/G1-scripts/cost.py. Window from 22 Nov 13:00.
 
-Weekly Gemini quota: 99.7% at 13:00, 53.91% now, drop 45.79 points (F). All Gemini tokens since 13:00: 88,784,958 (F).
+Weekly Gemini quota: 99.7% at 13:00, 53.27% now, drop 46.43 points (F). All Gemini tokens since 13:00: 90,034,698 (F).
 
 | lane | state | last score line | Gemini calls | agent minutes | tokens | weekly quota points (E) | models |
 |---|---|---|---|---|---|---|---|
 | ? | running |  | 3 | 23.4 | 274,343 | 0.14 | gemini-4-carbon-high |
-| APPLY1 | running |  | 4 | 93.7 | 582,978 | 0.30 | gemini-4-neon-medium |
+| APPLY1 | done |  | 5 | 131.7 | 877,656 | 0.45 | gemini-4-neon-medium |
 | APPLY2 | done |  | 1 | 25.5 | 98,124 | 0.05 | gemini-4-neon-medium |
 | APPLY3 | done |  | 1 | 25.3 | 153,885 | 0.08 | gemini-4-neon-medium |
 | BUGFIX1 | done |  | 1 | 37.9 | 591,986 | 0.31 | gemini-4-neon-medium |
@@ -62,11 +62,11 @@ Weekly Gemini quota: 99.7% at 13:00, 53.91% now, drop 45.79 points (F). All Gemi
 | HBUG2 | done |  | 1 | 10.3 | 356,530 | 0.18 | gemini-4-neon-medium |
 | HBUG3 | done |  | 1 | 13.0 | 241,601 | 0.12 | gemini-4-neon-medium |
 | HQA4 | running |  | 30 | 1027.8 | 10,985,828 | 5.67 | gemini-4-carbon-high |
-| HSOFT10 | running |  | 9 | 337.4 | 664,809 | 0.34 | gemini-4-neon-medium |
+| HSOFT10 | done |  | 9 | 337.4 | 664,809 | 0.34 | gemini-4-neon-medium |
 | REPH24 | done |  | 1 | 6.5 | 241,710 | 0.12 | gemini-4-neon-medium |
-| VER38 | running |  | 31 | 1099.0 | 18,224,844 | 9.40 | gemini-4-carbon-high |
+| VER38 | running |  | 33 | 1173.4 | 19,083,352 | 9.84 | gemini-4-carbon-high |
 | XSELL1 | done |  | 2 | 13.8 | 319,659 | 0.16 | gemini-4-neon-medium |
-| other |  |  | 175 | 1702.4 | 44,520,665 | 22.96 | gemini-3.8-flash-low, gemini-4-carbon-high, gemini-4-neon-high |
+| other |  |  | 176 | 1706.5 | 44,617,219 | 23.01 | gemini-3.8-flash-low, gemini-4-carbon-high, gemini-4-neon-high |
 
 A product cost is final when its lane has SCORE 100 in its scores file and a .done file. &quot;other&quot; = Gemini calls with no lane (GQA, tests, other sessions).
 Note: the ledger writes a row when a call ends, so a running 40-minute call shows only after it ends.
@@ -151,4 +151,4 @@ Use Gemini 4 Neon for VS Code extension builds: YES (F).
 3. Reserve `gemini-4-carbon-high` for complex binary/XML parsers and `GREV` read-only reviews (F).
 4. Keep `VER28` (`codex-pro`) + `VER33`/`VER34` (`hermes`) as independent two-PASS gates before `GPUB` (F).
 5. Voice note saved to `out/G1-voice-note.aiff` and played for the owner (F).
-</pre><p class="mut" style="margin-top:30px">Page built 2026-11-23 12:37 (UTC+7) by factory/sprint/build_gemini.py. See also the <a href="sprint.html">Sprint</a> tab.</p></main></body></html>
+</pre><p class="mut" style="margin-top:30px">Page built 2026-11-23 13:38 (UTC+7) by factory/sprint/build_gemini.py. See also the <a href="sprint.html">Sprint</a> tab.</p></main></body></html>
